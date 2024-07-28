@@ -3,12 +3,17 @@
 # git commit -m "Add practice problem"
 # git push origin main
 
+# 01-variables1
 
-# Write a program that uses a variable to store a number, then prints that number plus 10.
+# 1. Write a program that uses a variable to store a number, then prints that number plus 10.
 number = 6
 puts number = number + 10
 
-
-# Write a program that uses a variable to store a word, then prints that word with all capital letters.
+# 2. Write a program that uses a variable to store a word, then prints that word with all capital letters.
 word = "hello"
 puts word.upcase
+
+# 3. Write a program that uses variables to store two numbers, then prints the numbers added together.
+num_1 = 3
+num_2 = 6
+puts num_1 + num_2
