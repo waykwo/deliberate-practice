@@ -20,3 +20,8 @@ console.log(num1 + num2);
 // 5. Write a program that uses a variable to store a number, then prints the number times 10.
 let number = 8;
 console.log(number * 10);
+
+// 6. Write a program that uses variables to store two words, then prints both words on the same line in all capital letters.
+let word1 = "hello";
+let word2 = "world";
+console.log(word1.toUpperCase() + word2.toUpperCase())

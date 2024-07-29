@@ -25,3 +25,8 @@ puts word.reverse
 # 5. Write a program that uses a variable to store a number, then prints the number times 10.
 number = 8
 puts number * 10
+
+# 6. Write a program that uses variables to store two words, then prints both words on the same line in all capital letters.
+word_1 = "hello"
+word_2 = "world"
+puts word_1.upcase + word_2.upcase
