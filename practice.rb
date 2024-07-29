@@ -30,3 +30,7 @@ puts number * 10
 word_1 = "hello"
 word_2 = "world"
 puts word_1.upcase + word_2.upcase
+
+# 7. Write a program that uses a variable to store a word, then prints the number of letters in the word.
+word = "Pneumonoultramicroscopicsilicovolcanoconiosis"
+p word.length

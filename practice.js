@@ -25,3 +25,7 @@ console.log(number * 10);
 let word1 = "hello";
 let word2 = "world";
 console.log(word1.toUpperCase() + word2.toUpperCase())
+
+// 7. Write a program that uses a variable to store a word, then prints the number of letters in the word.
+let word = "Pneumonoultramicroscopicsilicovolcanoconiosis";
+console.log(word.length)

@@ -24,3 +24,7 @@ print(number * 10)
 word_1 = "hello"
 word_2 = "world"
 print(word_1.upper() + word_2.upper())
+
+# 7. Write a program that uses a variable to store a word, then prints the number of letters in the word.
+word = "Pneumonoultramicroscopicsilicovolcanoconiosis"
+print(len(word))
