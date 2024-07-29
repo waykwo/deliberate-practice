@@ -12,3 +12,10 @@ print(word.upper())
 num_1 = 3
 num_2 = 6
 print(num_1 + num_2)
+
+# 4. Write a program that uses a variable to store a word, then prints that word in reverse order.
+
+
+# 5. Write a program that uses a variable to store a number, then prints the number times 10.
+number = 8
+print(number * 10)

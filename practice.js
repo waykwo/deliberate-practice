@@ -11,4 +11,12 @@ console.log(word.toUpperCase());
 // 3. Write a program that uses variables to store two numbers, then prints the numbers added together.
 let num1 = 3;
 let num2 = 6;
-console.log(num1 + num2)
+console.log(num1 + num2);
+
+// 4. Write a program that uses a variable to store a word, then prints that word in reverse order.
+
+
+
+// 5. Write a program that uses a variable to store a number, then prints the number times 10.
+let number = 8;
+console.log(number * 10);

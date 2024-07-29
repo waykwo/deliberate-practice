@@ -7,7 +7,7 @@
 
 # 1. Write a program that uses a variable to store a number, then prints that number plus 10.
 number = 6
-puts number = number + 10
+puts number + 10
 
 # 2. Write a program that uses a variable to store a word, then prints that word with all capital letters.
 word = "hello"
@@ -17,3 +17,11 @@ puts word.upcase
 num_1 = 3
 num_2 = 6
 puts num_1 + num_2
+
+# 4. Write a program that uses a variable to store a word, then prints that word in reverse order.
+word = "drawer"
+puts word.reverse
+
+# 5. Write a program that uses a variable to store a number, then prints the number times 10.
+number = 8
+puts number * 10
