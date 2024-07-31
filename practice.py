@@ -28,3 +28,7 @@ print(word_1.upper() + word_2.upper())
 # 7. Write a program that uses a variable to store a word, then prints the number of letters in the word.
 word = "Pneumonoultramicroscopicsilicovolcanoconiosis"
 print(len(word))
+
+# 8. Write a program that uses a variable to store a number with decimals, then prints the number as an integer.
+number = 3.14159265
+print(int(number))

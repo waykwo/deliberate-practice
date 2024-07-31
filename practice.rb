@@ -34,3 +34,24 @@ puts word_1.upcase + word_2.upcase
 # 7. Write a program that uses a variable to store a word, then prints the number of letters in the word.
 word = "Pneumonoultramicroscopicsilicovolcanoconiosis"
 p word.length
+
+# 8. Write a program that uses a variable to store a number with decimals, then prints the number as an integer.
+number = 3.14159265
+puts number.to_i
+
+
+
+
+
+
+
+
+### 03-loops2.md
+
+# 1. Start with an array of numbers and create a new array with each number times 3. For example, [1, 2, 3] becomes [3, 6, 9].
+first_numbers = [3, 6, 9]
+second_numbers = []
+first_numbers.each do |number|
+    second_numbers.append(number * 3)
+end
+pp second_numbers
