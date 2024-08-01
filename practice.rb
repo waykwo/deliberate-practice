@@ -48,10 +48,20 @@ puts number.to_i
 
 ### 03-loops2.md
 
-# 1. Start with an array of numbers and create a new array with each number times 3. For example, [1, 2, 3] becomes [3, 6, 9].
+# 1. Start with an array of numbers and create a new array with each number times 3.
+# For example, [1, 2, 3] becomes [3, 6, 9].
 first_numbers = [3, 6, 9]
 second_numbers = []
 first_numbers.each do |number|
     second_numbers.append(number * 3)
 end
 pp second_numbers
+
+# 2. Start with an array of strings and create a new array with each string upcased.
+# For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+strings_1 = ["hello", "goodbye"]
+strings_2 = []
+strings_1.each do |string|
+    strings_2.append(string.upcase)
+end
+pp strings_2
