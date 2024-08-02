@@ -32,7 +32,27 @@ let word = "Pneumonoultramicroscopicsilicovolcanoconiosis";
 console.log(word.length)
 
 // 8. Write a program that uses a variable to store a number with decimals, then prints the number as an integer.
-let float = 3.14159265
-console.log(Math.round(float))
+let float = 3.14159265;
+console.log(Math.round(float));
 
 // 9. Write a program that uses a variable to store two numbers, then prints the two numbers multiplied together.
+let num1 = 12;
+let num2 = 3;
+console.log(num1 * num2);
+
+// 10. Write a program that uses a variable to store a word, then prints the word with all lowercase letters.
+let word = "hereIsACamelCaseString";
+console.log(word.toLowerCase());
+
+
+// 01-variables1
+
+// 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
+let first = "Sherlock";
+let last = "Holmes";
+console.log(first + " " + last);
+
+// 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+let first = "Sherlock";
+let last = "Holmes";
+console.log(`${first} ${last}`);
