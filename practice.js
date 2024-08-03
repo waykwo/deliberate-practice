@@ -56,3 +56,23 @@ console.log(first + " " + last);
 let first = "Sherlock";
 let last = "Holmes";
 console.log(`${first} ${last}`);
+
+// 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+let word = prompt("Please enter a word:");
+if (word === "marco") {
+    console.log("polo");
+}
+
+// 4. Write a program that uses variables to store three different colors, then 
+// prints out a sentence using the colors with string concatenation (the + operator).
+let colour1 = "red", colour2 = "green", colour3 = "blue";
+colour_array = [colour1, colour2, colour3];
+console.log("The colours are: " + colour_array.join(", ") + ".");
+
+let colour1 = "red", colour2 = "green", colour3 = "blue";
+console.log("The colours are: " + colour1 + ", " + colour2 + ", and " + colour3 + ".");
+
+// 5. Write a program that uses variables to store three different colors, then 
+// prints out a sentence using the colors with string interpolation (the #{} operator).
+let colour1 = "red", colour2 = "green", colour3 = "blue";
+console.log(`The colours are: ${colour1}, ${colour2}, and ${colour3}.`);
