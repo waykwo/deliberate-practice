@@ -45,3 +45,17 @@ print(f"{first} {last}")
 word = input("Please enter a word: ")
 if word == "marco":
     print("polo")
+
+# 4. Write a program that uses variables to store three different colors, then 
+# prints out a sentence using the colors with string concatenation (the + operator).
+colour1 = "red"
+colour2 = "green"
+colour3 = "blue"
+print("The colours are: " + colour1 + ", " + colour2 + ", and " + colour3 + ".")
+
+# 5. Write a program that uses variables to store three different colors, then 
+# prints out a sentence using the colors with string interpolation (the #{} operator).
+colour1 = "red"
+colour2 = "green"
+colour3 = "blue"
+print(f"The colours are: {colour1}, {colour2}, and {colour3}.")
