@@ -59,3 +59,8 @@ colour1 = "red"
 colour2 = "green"
 colour3 = "blue"
 print(f"The colours are: {colour1}, {colour2}, and {colour3}.")
+
+# 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+name = input("What is your name?: ")
+if name != "Santa":
+    print("You're not Santa.")

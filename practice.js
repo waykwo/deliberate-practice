@@ -76,3 +76,9 @@ console.log("The colours are: " + colour1 + ", " + colour2 + ", and " + colour3 
 // prints out a sentence using the colors with string interpolation (the #{} operator).
 let colour1 = "red", colour2 = "green", colour3 = "blue";
 console.log(`The colours are: ${colour1}, ${colour2}, and ${colour3}.`);
+
+// 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
+let name = promtpt("Please enter your name:")
+if (name !== "Santa") {
+    console.log("You're not Santa.")
+}
