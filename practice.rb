@@ -48,7 +48,12 @@ first = "Sherlock"
 last = "Holmes"
 puts "#{first} #{last}"
 
-
+# 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+puts "Please input a word:"
+word = gets.chomp
+if word == "marco"
+    puts "polo"
+end
 
 
 ### 03-loops2.md
@@ -97,3 +102,15 @@ strings.each do |string|
     lengths.push(string.length)
 end
 pp lengths
+
+# 6. Start with an array of hashes and create a new array of number values from each hash's :age key.
+# For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes [27, 16].
+people = [
+    {name: "Alice", age: 27},
+    {name: "Blane", age: 16}
+]
+ages = []
+people.each do |person|
+    ages.append(person[:age])
+end
+pp ages

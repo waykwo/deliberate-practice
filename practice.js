@@ -45,7 +45,7 @@ let word = "hereIsACamelCaseString";
 console.log(word.toLowerCase());
 
 
-// 01-variables1
+// 01-variables2
 
 // 1. Write a program that uses variables to store a first and last name, then prints the full name in one line using string concatenation (the + operator).
 let first = "Sherlock";
