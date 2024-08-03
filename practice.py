@@ -32,3 +32,16 @@ print(len(word))
 # 8. Write a program that uses a variable to store a number with decimals, then prints the number as an integer.
 number = 3.14159265
 print(int(number))
+
+
+### 01-variables2.md
+
+# 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+first = "Sherlock"
+last = "Holmes"
+print(f"{first} {last}")
+
+# 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
+word = input("Please enter a word: ")
+if word == "marco":
+    print("polo")
