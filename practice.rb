@@ -295,3 +295,22 @@ pp bargains
 numbers = [2, 4, 5, 1, 8, 9, 7]
 odd = numbers.select {|number| number.odd?}
 pp odd
+
+
+### 03-loops4.md
+
+# 1. Start with an array of numbers and compute the sum of all the numbers.
+# For example, [5, 10, 8, 3] becomes 26.
+numbers = [5, 10, 8, 3]
+sum = numbers.sum
+pp sum
+
+#   Alternative
+numbers = [5, 10, 8, 3]
+sum = 0
+numbers.each do |number|
+  sum = sum + number
+end
+pp sum
+
+# 2. 

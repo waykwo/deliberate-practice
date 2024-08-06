@@ -1,5 +1,8 @@
-# 10. Start with an array of numbers and create a new array with only the odd numbers.
-# For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
-numbers = [2, 4, 5, 1, 8, 9, 7]
-odd = numbers.select {|number| number.odd?}
-pp odd
+# 1. Start with an array of numbers and compute the sum of all the numbers.
+# For example, [5, 10, 8, 3] becomes 26.
+numbers = [5, 10, 8, 3]
+sum = 0
+numbers.each do |number|
+  sum = sum + number
+end
+pp sum
