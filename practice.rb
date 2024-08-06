@@ -246,4 +246,52 @@ hashes.each do |hash|
 end
 pp prices_over_5
 
+# 4. Start with an array of numbers and create a new array with only the even numbers.
+# For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+numbers = [2, 4, 5, 1, 8, 9, 7]
+even = numbers.select {|number| number.even?}
+pp even
 
+# 5. Start with an array of strings and create a new array with only the strings shorter than 4 letters.
+# For example, ["a", "man", "a", "plan", "a", "canal", "panama"] becomes ["a", "man", "a", "a"].
+strings = ["a", "man", "a", "plan", "a", "canal", "panama"]
+short = strings.select {|string| string.length < 4}
+pp short
+
+# 6. Start with an array of hashes and create a new array with only the hashes 
+# with names shorter than 6 letters (from the :name key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, 
+# {name: "book", price: 4}] becomes [{name: "chair", price: 100}, {name: "book", price: 4}].
+array = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+short_names = array.select {|item| item[:name].length < 6}
+pp short_names
+
+# 7. Start with an array of numbers and create a new array with only the numbers greater than or equal to 23.
+# For example, [8, 23, 0, 44, 1980, 3] becomes [23, 44, 1980].
+numbers = [8, 23, 0, 44, 1980, 3]
+selected = numbers.select {|number| number >= 23}
+pp selected
+
+# 8. Start with an array of strings and create a new array with only the strings that don't start with the letter "b".
+# For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+strings = ["big", "little", "good", "bad"]
+not_begin_with_d = strings.select {|string| not string.start_with?("b")}
+pp not_begin_with_d
+
+# 9. Start with an array of hashes and create a new array with only the hashes 
+# with prices less than 10 (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, 
+# {name: "book", price: 4}] becomes [{name: "pencil", price: 1}, {name: "book", price: 4}].
+prices = [
+  {name: "chair", price: 100},
+  {name: "pencil", price: 1},
+  {name: "book", price: 4}
+]
+bargains = prices.select {|price| price[:price] < 10}
+pp bargains
+
+# 10. Start with an array of numbers and create a new array with only the odd numbers.
+# For example, [2, 4, 5, 1, 8, 9, 7] becomes [5, 1, 9, 7].
+numbers = [2, 4, 5, 1, 8, 9, 7]
+odd = numbers.select {|number| number.odd?}
+pp odd
