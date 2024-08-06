@@ -223,3 +223,27 @@ numbers.each do |number|
     end
 end
 pp less_than_twenty
+
+# 2. Start with an array of strings and create a new array with only the strings that start with the letter "w".
+# For example, ["winner", "winner", "chicken", "dinner"] becomes ["winner", "winner"].
+array = ["winner", "winner", "chicken", "dinner"]
+w_array = []
+array.each do |string|
+  if string.start_with?("w")
+    w_array << string
+  end
+end
+pp w_array
+
+# 3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+hashes = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+prices_over_5 = []
+hashes.each do |hash|
+  if hash[:price] > 5
+    prices_over_5 << hash
+  end
+end
+pp prices_over_5
+
+

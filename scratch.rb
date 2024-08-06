@@ -1,10 +1,10 @@
-# 1. Start with an array of numbers and create a new array with only the numbers less than 20.
-# For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
-numbers = [2, 32, 80, 18, 12, 3]
-less_than_twenty = []
-numbers.each do |number|
-    if number < 20
-        less_than_twenty << number
-    end
+# 3. Start with an array of hashes and create a new array with only the hashes with prices greater than 5 (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] becomes [{name: "chair", price: 100}].
+hashes = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+prices_over_5 = []
+hashes.each do |hash|
+  if hash[:price] > 5
+    prices_over_5 << hash
+  end
 end
-pp less_than_twenty
+pp prices_over_5
