@@ -355,9 +355,6 @@ p sum
 
 
 
-# Step 1: Read the problem below.
-# Step 2: Decompose the problem into smaller testable problems. DO NOT SOLVE THE PROBLEM YET.
-# Step 3: Solve each problem until you get stuck. YOU DO NOT NEED TO SOLVE THE COMPLETE PROBLEM!
 
 # QUESTION 1
 # Have the user enter 10 words, and allow for duplicate words. 
