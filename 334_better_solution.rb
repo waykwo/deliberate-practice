@@ -16,7 +16,7 @@ puts "You will be asked for ten words. Enter some duplicates and I'll tell you w
   words << gets.chomp
 end
 
-# Create an array to store hashes (key: word; value: count of each word)
+# Create a hash of the word and the count
 word_count = {}
 words.each do |word|
   if word_count.include?(word)
