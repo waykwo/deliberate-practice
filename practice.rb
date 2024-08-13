@@ -355,9 +355,13 @@ pp array.min
 
 # Alternatively
 array = [5, 10, 8, 3, 9]
-array.length.times do
-
+minimum = array[0]
+for i in 1..(array.length - 1)
+  if array[i] < minimum
+    minimum = array[i]
+  end
 end
+pp minimum
 
 # 5. Start with an array of strings and compute the total length of all the strings.
 # For example, ["volleyball", "basketball", "badminton"] becomes 29.
