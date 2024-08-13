@@ -393,6 +393,13 @@ for i in 1..(numbers.length - 1)
 end
 p product
 
+# 8. Start with an array of strings and combine them all into a single string, separated by dashes.
+# For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
+sports = ["volleyball", "basketball", "badminton"]
+sports.unshift("")
+sports.push("")
+pp sports.join("-")
+
 
 
 
