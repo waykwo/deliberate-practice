@@ -384,6 +384,15 @@ end
 lowest_price = items.select {|item| item[:price] == prices.min}
 pp lowest_price
 
+# 7. Start with an array of numbers and compute product of all the numbers.
+# For example, [5, 10, 8, 3] becomes 1200.
+numbers = [5, 10, 8, 3]
+product = numbers[0]
+for i in 1..(numbers.length - 1)
+  product *= numbers[i]
+end
+p product
+
 
 
 
