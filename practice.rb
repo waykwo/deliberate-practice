@@ -353,10 +353,32 @@ p sum
 array = [5, 10, 8, 3, 9]
 pp array.min
 
+# Alternatively
+array = [5, 10, 8, 3, 9]
+array.length.times do
 
+end
 
+# 5. Start with an array of strings and compute the total length of all the strings.
+# For example, ["volleyball", "basketball", "badminton"] becomes 29.
+sports = ["volleyball", "basketball", "badminton"]
+total_length = 0
+sports.each do |sport|
+  total_length += sport.length
+end
+p total_length
 
-
+# 6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
+# becomes {name: "pencil", price: 1}.
+items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+prices = []
+items.each do |item|
+  prices << item[:price]
+end
+# pp prices.min
+lowest_price = items.select {|item| item[:price] == prices.min}
+pp lowest_price
 
 
 
