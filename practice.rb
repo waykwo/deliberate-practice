@@ -348,6 +348,11 @@ items.each do |item|
 end
 p sum
 
+# 4. Start with an array of numbers and compute the the minimum number.
+# For example, [5, 10, 8, 3, 9] becomes 3.
+array = [5, 10, 8, 3, 9]
+pp array.min
+
 
 
 
@@ -400,3 +405,5 @@ elsif top_words.length > 1
 else
   puts "Your most common word was #{top_words.keys.join("")}."
 end
+
+
