@@ -497,10 +497,35 @@
 # 9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
 # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
 # becomes {name: "book", price: 4}.
+# items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# names = []
+# items.each do |item|
+#   names << item[:name]
+# end
+# # pp names.min
+# pp items.select {|item| item[:name] == names.min}
+
 items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-names = []
+shortest = items[0]
 items.each do |item|
-  names << item[:name]
+  if item[:name].length < shortest[:name].length
+    shortest = item
+  end
 end
-# pp names.min
-pp items.select {|item| item[:name] == names.min}
+p shortest
+
+
+# 10. Start with an array of numbers and compute the maximum number.
+# For example, [5, 10, 8, 3] becomes 10.
+# array = [5, 10, 8, 3]
+# pp array.max
+
+# # Alt
+# array = [5, 10, 8, 3]
+# largest = array[0]
+# array.each do |number|
+#   if number > largest
+#     largest = number
+#   end
+# end
+# pp largest
