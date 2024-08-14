@@ -457,11 +457,50 @@
 # pp sorted, array
 
 
-# 5. Start with an array of strings and compute the total length of all the strings.
-# For example, ["volleyball", "basketball", "badminton"] becomes 29.
-sports = ["volleyball", "basketball", "badminton"]
-total_length = 0
-sports.each do |sport|
-  total_length += sport.length
+# # 5. Start with an array of strings and compute the total length of all the strings.
+# # For example, ["volleyball", "basketball", "badminton"] becomes 29.
+# sports = ["volleyball", "basketball", "badminton"]
+# total_length = 0
+# sports.each do |sport|
+#   total_length += sport.length
+# end
+# p total_length
+
+# # 6. Start with an array of hashes and find the hash with the lowest price (from the :price key).
+# # For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
+# # becomes {name: "pencil", price: 1}.
+# items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# prices = []
+# items.each do |item|
+#   prices << item[:price]
+# end
+# # pp prices.min
+# lowest_price = items.select {|item| item[:price] == prices.min}
+# pp lowest_price
+
+# # 7. Start with an array of numbers and compute product of all the numbers.
+# # For example, [5, 10, 8, 3] becomes 1200.
+# numbers = [5, 10, 8, 3]
+# product = numbers[0]
+# for i in 1..(numbers.length - 1)
+#   product *= numbers[i]
+# end
+# p product
+
+# 8. Start with an array of strings and combine them all into a single string, separated by dashes.
+# For example, ["volleyball", "basketball", "badminton"] becomes "-volleyball-basketball-badminton-".
+# sports = ["volleyball", "basketball", "badminton"]
+# sports.unshift("")
+# sports.push("")
+# pp sports.join("-")
+
+# 9. Start with an array of hashes and find the hash with the shortest name (from the :name key).
+# For example, [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}] 
+# becomes {name: "book", price: 4}.
+items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+names = []
+items.each do |item|
+  names << item[:name]
 end
-p total_length
+# pp names.min
+pp items.select {|item| item[:name] == names.min}
