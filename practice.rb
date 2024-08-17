@@ -437,6 +437,23 @@ end
 pp largest
 
 
+### 03-loops5.md
+
+# 1. Use a nested loop to convert an array of number pairs into a single flattened array.
+# For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
+array = [[1, 3], [8, 9], [2, 16]]
+flattened = []
+for i in 0..array.length - 1
+  for j in 0..array[i].length - 1
+    flattened << array[i][j]
+  end
+end
+pp flattened
+
+
+
+
+
 
 # QUESTION 1
 # Have the user enter 10 words, and allow for duplicate words. 

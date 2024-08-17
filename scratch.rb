@@ -505,14 +505,14 @@
 # # pp names.min
 # pp items.select {|item| item[:name] == names.min}
 
-items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
-shortest = items[0]
-items.each do |item|
-  if item[:name].length < shortest[:name].length
-    shortest = item
-  end
-end
-p shortest
+# items = [{name: "chair", price: 100}, {name: "pencil", price: 1}, {name: "book", price: 4}]
+# shortest = items[0]
+# items.each do |item|
+#   if item[:name].length < shortest[:name].length
+#     shortest = item
+#   end
+# end
+# p shortest
 
 
 # 10. Start with an array of numbers and compute the maximum number.
@@ -529,3 +529,16 @@ p shortest
 #   end
 # end
 # pp largest
+
+
+# 1. Use a nested loop to convert an array of number pairs into a single flattened array.
+# For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
+array = [[1, 3], [8, 9], [2, 16]]
+flattened = []
+for i in 0..array.length - 1
+  for j in 0..array[i].length - 1
+    flattened << array[i][j]
+  end
+end
+pp flattened
+
