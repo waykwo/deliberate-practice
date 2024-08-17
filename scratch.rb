@@ -533,12 +533,58 @@
 
 # 1. Use a nested loop to convert an array of number pairs into a single flattened array.
 # For example, [[1, 3], [8, 9], [2, 16]] becomes [1, 3, 8, 9, 2, 16].
-array = [[1, 3], [8, 9], [2, 16]]
-flattened = []
-for i in 0..array.length - 1
-  for j in 0..array[i].length - 1
-    flattened << array[i][j]
+# array = [[1, 3], [8, 9], [2, 16]]
+# flattened = []
+# for i in 0..array.length - 1
+#   for j in 0..array[i].length - 1
+#     flattened << array[i][j]
+#   end
+# end
+# pp flattened
+
+# 2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
+# For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes 
+# ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+# foo = ["a", "b", "c"]
+# bar = ["d", "e", "f", "g"]
+# baz = []
+
+# foo.each do |f|
+#   bar.each do |br|
+#     baz << f + br
+#   end
+# end
+# pp baz
+
+# 3. Use a nested loop with one array of strings to create a new array that 
+# contains every combination of each string with every other string in the array.
+# For example, ["a", "b", "c", "d"] becomes 
+# ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+array = ["a", "b", "c", "d"]
+combined = []
+array.each do |foo|
+  array.each do |bar|
+    combined << foo + bar
   end
 end
-pp flattened
+pp combined
 
+array = ["a", "b", "c", "d"]
+combined = []
+array.each do |item|
+  for i in 1..array.length - 1
+    combined << item + array[i]
+  end
+end
+pp combined
+
+# Each item in the array has to pair with each item in a copy of the same array with the item matching its value popped
+array = ["a", "b", "c", "d"]
+combined = []
+array.each do |first_array_item|
+  pair_array = array.reject {|item| item == first_array_item}
+  pair_array.each do |pair_array_item|
+    combined << first_array_item + pair_array_item
+  end
+end
+pp combined

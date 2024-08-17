@@ -450,7 +450,33 @@ for i in 0..array.length - 1
 end
 pp flattened
 
+# 2. Use a nested loop with two arrays of strings to create a new array of strings with each string combined.
+# For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes 
+# ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+foo = ["a", "b", "c"]
+bar = ["d", "e", "f", "g"]
+baz = []
 
+foo.each do |f|
+  bar.each do |br|
+    baz << f + br
+  end
+end
+pp baz
+
+# 3. Use a nested loop with one array of strings to create a new array that 
+# contains every combination of each string with every other string in the array.
+# For example, ["a", "b", "c", "d"] becomes 
+# ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+array = ["a", "b", "c", "d"]
+combined = []
+array.each do |first_array_item|
+  pair_array = array.reject {|item| item == first_array_item}
+  pair_array.each do |pair_array_item|
+    combined << first_array_item + pair_array_item
+  end
+end
+pp combined
 
 
 
