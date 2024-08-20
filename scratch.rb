@@ -560,31 +560,46 @@
 # contains every combination of each string with every other string in the array.
 # For example, ["a", "b", "c", "d"] becomes 
 # ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
-array = ["a", "b", "c", "d"]
-combined = []
-array.each do |foo|
-  array.each do |bar|
-    combined << foo + bar
-  end
-end
-pp combined
+# array = ["a", "b", "c", "d"]
+# combined = []
+# array.each do |foo|
+#   array.each do |bar|
+#     combined << foo + bar
+#   end
+# end
+# pp combined
+# # Doesn't work
 
-array = ["a", "b", "c", "d"]
-combined = []
-array.each do |item|
-  for i in 1..array.length - 1
-    combined << item + array[i]
-  end
-end
-pp combined
+# array = ["a", "b", "c", "d"]
+# combined = []
+# array.each do |item|
+#   for i in 1..array.length - 1
+#     combined << item + array[i]
+#   end
+# end
+# pp combined
+# # Doesn't work
 
 # Each item in the array has to pair with each item in a copy of the same array with the item matching its value popped
-array = ["a", "b", "c", "d"]
-combined = []
-array.each do |first_array_item|
-  pair_array = array.reject {|item| item == first_array_item}
-  pair_array.each do |pair_array_item|
-    combined << first_array_item + pair_array_item
+# array = ["a", "b", "c", "d"]
+# combined = []
+# array.each do |first_array_item|
+#   pair_array = array.reject {|item| item == first_array_item}
+#   pair_array.each do |pair_array_item|
+#     combined << first_array_item + pair_array_item
+#   end
+# end
+# pp combined
+
+# 4. Use a nested loop to find the largest product of any two different numbers within a given array.
+# For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+numbers = [5, -2, 1, -9, -7, 2, 6]
+products = []
+numbers.each do |number|
+  other_numbers = numbers.reject {|other| other == number}
+  other_numbers.each do |other_num|
+    products << number * other_num
   end
 end
-pp combined
+largest_product = products.max
+p largest_product
