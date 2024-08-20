@@ -549,8 +549,7 @@ originals.each do |original|
   seconds = originals.reject {|number| number == original}
   seconds.each do |second|
     if original + second == 10 && sum_10.length < 2
-      sum_10 << original
-      sum_10 << second
+      sum_10 = [original, second]
     end
   end
 end
