@@ -593,13 +593,24 @@
 
 # 4. Use a nested loop to find the largest product of any two different numbers within a given array.
 # For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
-numbers = [5, -2, 1, -9, -7, 2, 6]
-products = []
-numbers.each do |number|
-  other_numbers = numbers.reject {|other| other == number}
-  other_numbers.each do |other_num|
-    products << number * other_num
+# numbers = [5, -2, 1, -9, -7, 2, 6]
+# products = []
+# numbers.each do |number|
+#   other_numbers = numbers.reject {|other| other == number}
+#   other_numbers.each do |other_num|
+#     products << number * other_num
+#   end
+# end
+# largest_product = products.max
+# p largest_product
+
+# 5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
+# For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
+numbered_pairs = [[1, 3], [8, 9], [2, 16]]
+sum = 0
+numbered_pairs.each do |pair|
+  pair.each do |number|
+    sum += number
   end
 end
-largest_product = products.max
-p largest_product
+p sum
