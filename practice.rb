@@ -516,6 +516,18 @@ foo.each do |f|
 end
 pp baz
 
+# 7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
+# For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+numbers = [2, 8, 3]
+new_array = []
+numbers.each do |first|
+  numbers.each do |second|
+    new_array << first * second
+  end
+end
+pp new_array
+
+
 
 
 # QUESTION 1
