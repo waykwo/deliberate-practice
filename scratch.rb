@@ -629,11 +629,23 @@
 
 # 7. Use a nested loop with an array of numbers to compute an array with every combination of products from each number.
 # For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
-numbers = [2, 8, 3]
-new_array = []
-numbers.each do |first|
-  numbers.each do |second|
-    new_array << first * second
+# numbers = [2, 8, 3]
+# new_array = []
+# numbers.each do |first|
+#   numbers.each do |second|
+#     new_array << first * second
+#   end
+# end
+# pp new_array
+
+# 8. Use a nested loop to find the largest sum of any two different numbers within an array.
+# For example, [1, 8, 3, 10] becomes 18.
+numbers = [1, 8, 3, 10]
+sums = []
+numbers.each do |number|
+  other_numbers = numbers.reject {|other_number| other_number == number}
+  other_numbers.each do |other|
+    sums << number + other
   end
 end
-pp new_array
+pp sums.max

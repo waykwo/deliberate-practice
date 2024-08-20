@@ -527,6 +527,18 @@ numbers.each do |first|
 end
 pp new_array
 
+# 8. Use a nested loop to find the largest sum of any two different numbers within an array.
+# For example, [1, 8, 3, 10] becomes 18.
+numbers = [1, 8, 3, 10]
+sums = []
+numbers.each do |number|
+  other_numbers = numbers.reject {|other_number| other_number == number}
+  other_numbers.each do |other|
+    sums << number + other
+  end
+end
+pp sums.max
+
 
 
 
