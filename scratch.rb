@@ -606,11 +606,23 @@
 
 # 5. Use a nested loop to compute the sum of all the numbers in an array of number pairs.
 # For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
-numbered_pairs = [[1, 3], [8, 9], [2, 16]]
-sum = 0
-numbered_pairs.each do |pair|
-  pair.each do |number|
-    sum += number
+# numbered_pairs = [[1, 3], [8, 9], [2, 16]]
+# sum = 0
+# numbered_pairs.each do |pair|
+#   pair.each do |number|
+#     sum += number
+#   end
+# end
+# p sum
+
+# 6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
+# For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
+foo = [1, 2]
+bar = [6, 7, 8]
+baz = []
+foo.each do |f|
+  bar.each do |br|
+    baz << f + br
   end
 end
-p sum
+pp baz

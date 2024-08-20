@@ -504,6 +504,19 @@ numbered_pairs.each do |pair|
 end
 p sum
 
+# 6. Use a nested loop with two arrays of numbers to create a new array of the sums of each combination of numbers.
+# For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
+foo = [1, 2]
+bar = [6, 7, 8]
+baz = []
+foo.each do |f|
+  bar.each do |br|
+    baz << f + br
+  end
+end
+pp baz
+
+
 
 # QUESTION 1
 # Have the user enter 10 words, and allow for duplicate words. 
