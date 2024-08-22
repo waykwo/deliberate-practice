@@ -654,18 +654,29 @@
 # the first two numbers (from the original array) that add up to the number 10. 
 # If there are no two numbers that add up to 10, return false.
 # For example, [2, 5, 3, 1, 0, 7, 11] becomes [3, 7].
-originals = [2, 5, 3, 1, 0, 7, 11]
-sum_10 = []
-originals.each do |original|
-  seconds = originals.reject {|number| number == original}
-  seconds.each do |second|
-    if original + second == 10 && sum_10.length < 2
-      sum_10 = [original, second]
-    end
+# originals = [2, 5, 3, 1, 0, 7, 11]
+# sum_10 = []
+# originals.each do |original|
+#   seconds = originals.reject {|number| number == original}
+#   seconds.each do |second|
+#     if original + second == 10 && sum_10.length < 2
+#       sum_10 = [original, second]
+#     end
+#   end
+# end
+# if sum_10.length == 2
+#   pp sum_10
+# else
+#   puts false
+# end
+
+# 10. Use a nested loop to convert an array of string arrays into a single string.
+# For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+array = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+string = ""
+array.each do |item|
+  item.each do |sub_item|
+    string << sub_item
   end
 end
-if sum_10.length == 2
-  pp sum_10
-else
-  puts false
-end
+pp string

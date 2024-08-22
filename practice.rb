@@ -559,6 +559,17 @@ else
   puts false
 end
 
+# 10. Use a nested loop to convert an array of string arrays into a single string.
+# For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
+array = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+string = ""
+array.each do |item|
+  item.each do |sub_item|
+    string << sub_item
+  end
+end
+pp string
+
 
 # QUESTION 1
 # Have the user enter 10 words, and allow for duplicate words. 
