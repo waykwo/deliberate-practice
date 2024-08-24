@@ -672,11 +672,24 @@
 
 # 10. Use a nested loop to convert an array of string arrays into a single string.
 # For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] becomes "amanaplanacanalpanama".
-array = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
-string = ""
-array.each do |item|
-  item.each do |sub_item|
-    string << sub_item
-  end
+# array = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]]
+# string = ""
+# array.each do |item|
+#   item.each do |sub_item|
+#     string << sub_item
+#   end
+# end
+# pp string
+
+
+### 04-arrays-hashes3
+
+# 1. Convert an array of arrays into a hash.
+# For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+array = [[1, 3], [8, 9], [2, 16]]
+hash = {}
+array.each do |pair|
+  # hash.store(pair[0], pair[1])
+  hash[pair[0]] = pair[1]
 end
-pp string
+pp hash
