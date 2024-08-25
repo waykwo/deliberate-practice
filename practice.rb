@@ -575,6 +575,13 @@ pp string
 
 # 1. Convert an array of arrays into a hash.
 # For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+array = [[1, 3], [8, 9], [2, 16]]
+hash = {}
+array.each do |pair|
+  # hash.store(pair[0], pair[1])
+  hash[pair[0]] = pair[1]
+end
+pp hash
 
 # 2. Convert an array of hashes into a hash using the :id key from the array's 
 # hashes as the keys in the new hash.
