@@ -620,7 +620,12 @@ pp letter_count
 # For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
 hash = {"chair" => 100, "book" => 14}
 array = []
-pp hash["chair"]
+hash.each do |item|
+  array << item
+end
+pp array
+
+
 
 
 
