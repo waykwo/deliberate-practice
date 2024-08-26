@@ -686,10 +686,31 @@
 
 # 1. Convert an array of arrays into a hash.
 # For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
-array = [[1, 3], [8, 9], [2, 16]]
-hash = {}
-array.each do |pair|
-  # hash.store(pair[0], pair[1])
-  hash[pair[0]] = pair[1]
-end
-pp hash
+# array = [[1, 3], [8, 9], [2, 16]]
+# hash = {}
+# array.each do |pair|
+#   # hash.store(pair[0], pair[1])
+#   hash[pair[0]] = pair[1]
+# end
+# pp hash
+
+# 3. Convert a string into a hash with keys for each letter in the string and 
+# values for the number of times the letter appears in the string.
+# For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+# string = "bookkeeper"
+# letters = string.split(//)
+# letter_count = {}
+# letters.each do |letter|
+#   if letter_count.include?(letter)
+#     letter_count[letter] += 1
+#   else
+#     letter_count[letter] = 1
+#   end
+# end
+# pp letter_count
+
+# 4. Convert a hash into an array of arrays.
+# For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+hash = {"chair" => 100, "book" => 14}
+array = []
+pp hash["chair"]

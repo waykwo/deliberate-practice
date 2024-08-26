@@ -601,6 +601,30 @@ for i in 0..array.length - 1
 end
 pp hash
 
+# 3. Convert a string into a hash with keys for each letter in the string and 
+# values for the number of times the letter appears in the string.
+# For example, "bookkeeper" becomes {"b" => 1, "o" => 2, "k" => 2, "e" => 3, "p" => 1, "r" => 1}.
+string = "bookkeeper"
+letters = string.split(//)
+letter_count = {}
+letters.each do |letter|
+  if letter_count.include?(letter)
+    letter_count[letter] += 1
+  else
+    letter_count[letter] = 1
+  end
+end
+pp letter_count
+
+# 4. Convert a hash into an array of arrays.
+# For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
+hash = {"chair" => 100, "book" => 14}
+array = []
+pp hash["chair"]
+
+
+
+
 
 # QUESTION 1
 # Have the user enter 10 words, and allow for duplicate words. 
