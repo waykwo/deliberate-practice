@@ -803,13 +803,37 @@
 # end
 # puts "items_hash: #{items_hash}"
 
-prices = {"chair" => 75, "book" => 15}
-items = [
-  {name: "chair", color: "red", weight: 10},
-  {name: "book", color: "black", weight: 1}
+# prices = {"chair" => 75, "book" => 15}
+# items = [
+#   {name: "chair", color: "red", weight: 10},
+#   {name: "book", color: "black", weight: 1}
+# ]
+# items_hash = Hash.new
+# items.each do |item|
+#   items_hash[item[:name]] = {price: prices[item[:name]], color: item[:color], weight: item[:weight]}
+# end
+# puts "items_hash: #{items_hash}"
+
+
+# 9. Convert an array of hashes into a hash of arrays, using the author as keys and the titles as values.
+# For example, 
+# [
+#     {author: "Jeff Smith", title: "Bone"},
+#     {author: "George Orwell", title: "1984"},
+#     {author: "Jeff Smith", title: "RASL"}
+# ]
+#   becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
+books = [
+  {author: "Jeff Smith", title: "Bone"},
+  {author: "George Orwell", title: "1984"},
+  {author: "Jeff Smith", title: "RASL"}
 ]
-items_hash = Hash.new
-items.each do |item|
-  items_hash[item[:name]] = {price: prices[item[:name]], color: item[:color], weight: item[:weight]}
+book_hash = Hash.new
+books.each do |book_info|
+  if book_hash[book_info[:author]] == nil
+    book_hash[book_info[:author]] = [book_info[:title]]
+  else
+    book_hash[book_info[:author]] << [book_info[:title]]
+  end
 end
-puts "items_hash: #{items_hash}"
+pp book_hash
