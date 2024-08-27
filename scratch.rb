@@ -722,14 +722,28 @@
 # the :id key in each of the array's hashes.
 # For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} 
 # becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
-people = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
-people_array = []
-people.each do |id, person|
-  person[:id] = id
-  people_array << person
+# people = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
+# people_array = []
+# people.each do |id, person|
+#   person[:id] = id
+#   people_array << person
+# end
+# pp people_array
+
+
+# new_array = Array.new
+# pp new_array
+
+# 6. Convert an array of strings into a hash with keys for each string in the 
+# array and values for the number of times the string appears in the array.
+# For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
+strings = ["do", "or", "do", "not"]
+string_counts = {}
+strings.each do |string|
+  if string_counts.include?(string)
+    string_counts[string] += 1
+  else
+    string_counts[string] = 1
+  end
 end
-pp people_array
-
-
-new_array = Array.new
-pp new_array
+pp string_counts
