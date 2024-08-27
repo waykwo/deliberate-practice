@@ -731,6 +731,15 @@ def multiply_two(number)
 end
 pp multiply_two(16)
 
+# 2. Write a method that takes in a string and returns the string with all 
+# capital letters. Then run the method and print the result.
+def all_cap(string)
+  return string.upcase
+end
+
+pp all_cap("test")
+
+
 
 
 

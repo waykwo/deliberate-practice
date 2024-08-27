@@ -853,7 +853,15 @@
 
 # 1. Write a method that takes in a number and returns the number times two. 
 # Then run the method and print the result.
-def multiply_two(number)
-  return number * 2
+# def multiply_two(number)
+#   return number * 2
+# end
+# pp multiply_two(16)
+
+# 2. Write a method that takes in a string and returns the string with all 
+# capital letters. Then run the method and print the result.
+def all_cap(string)
+  return string.upcase
 end
-pp multiply_two(16)
+
+pp all_cap("test")
