@@ -722,6 +722,16 @@ end
 pp switched
 
 
+### 05-custom-methods-classes1.md
+
+# 1. Write a method that takes in a number and returns the number times two. 
+# Then run the method and print the result.
+def multiply_two(number)
+  return number * 2
+end
+pp multiply_two(16)
+
+
 
 
 # QUESTION 1

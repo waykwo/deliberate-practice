@@ -840,9 +840,20 @@
 
 # 10. Given a hash, create a new hash that has the keys and values switched.
 # For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
-hash = {"a" => 1, "b" => 2, "c" => 3}
-switched = {}
-hash.each do |key, value|
-  switched[value] = key
+# hash = {"a" => 1, "b" => 2, "c" => 3}
+# switched = {}
+# hash.each do |key, value|
+#   switched[value] = key
+# end
+# pp switched
+
+
+
+### 05-custom-methods-classes1.md
+
+# 1. Write a method that takes in a number and returns the number times two. 
+# Then run the method and print the result.
+def multiply_two(number)
+  return number * 2
 end
-pp switched
+pp multiply_two(16)
