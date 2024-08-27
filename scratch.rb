@@ -711,9 +711,17 @@
 
 # 4. Convert a hash into an array of arrays.
 # For example, {"chair" => 100, "book" => 14} becomes [["chair", 100], ["book", 14]].
-hash = {"chair" => 100, "book" => 14}
-array = []
-hash.each do |item|
-  array << item
-end
-pp array
+# hash = {"chair" => 100, "book" => 14}
+# array = []
+# hash.each do |item|
+#   array << item
+# end
+# pp array
+
+# 5. Convert a hash into an array of hashes using the keys from each hash as 
+# the :id key in each of the array's hashes.
+# For example, {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} 
+# becomes [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
+hash = {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}}
+mod_hash = hash.select {|key, value| key = key + value}
+pp mod_hash
