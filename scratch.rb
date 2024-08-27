@@ -737,24 +737,34 @@
 # 6. Convert an array of strings into a hash with keys for each string in the 
 # array and values for the number of times the string appears in the array.
 # For example, ["do", "or", "do", "not"] becomes {"do" => 2, "or" => 1, "not" => 1}.
-strings = ["do", "or", "do", "not"]
-string_counts = {}
-strings.each do |string|
-  if string_counts.include?(string)
-    string_counts[string] += 1
-  else
-    string_counts[string] = 1
-  end
-end
-pp string_counts
+# strings = ["do", "or", "do", "not"]
+# string_counts = {}
+# strings.each do |string|
+#   if string_counts.include?(string)
+#     string_counts[string] += 1
+#   else
+#     string_counts[string] = 1
+#   end
+# end
+# pp string_counts
 
-strings = ["do", "or", "do", "not"]
-string_counts = {}
-strings.each do |string|
-  if string_counts[string] == nil
-    string_counts[string] = 1
-  else
-    string_counts[string] += 1
-  end
+# strings = ["do", "or", "do", "not"]
+# string_counts = {}
+# strings.each do |string|
+#   if string_counts[string] == nil
+#     string_counts[string] = 1
+#   else
+#     string_counts[string] += 1
+#   end
+# end
+# pp string_counts
+
+# 7. Convert a hash into a flat array containing all the hash’s keys and values.
+# For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
+hash = {"a" => 1, "b" => 2, "c" => 3, "d" => 4}
+flat_array = Array.new
+hash.each do |key, value|
+  flat_array << key
+  flat_array << value
 end
-pp string_counts
+pp flat_array
