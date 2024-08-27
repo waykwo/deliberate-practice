@@ -747,3 +747,14 @@ strings.each do |string|
   end
 end
 pp string_counts
+
+strings = ["do", "or", "do", "not"]
+string_counts = {}
+strings.each do |string|
+  if string_counts[string] == nil
+    string_counts[string] = 1
+  else
+    string_counts[string] += 1
+  end
+end
+pp string_counts
