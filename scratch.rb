@@ -761,10 +761,55 @@
 
 # 7. Convert a hash into a flat array containing all the hash’s keys and values.
 # For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes ["a", 1, "b", 2, "c", 3, "d", 4].
-hash = {"a" => 1, "b" => 2, "c" => 3, "d" => 4}
-flat_array = Array.new
-hash.each do |key, value|
-  flat_array << key
-  flat_array << value
+# hash = {"a" => 1, "b" => 2, "c" => 3, "d" => 4}
+# flat_array = Array.new
+# hash.each do |key, value|
+#   flat_array << key
+#   flat_array << value
+# end
+# pp flat_array
+
+# 8. Combine data from a hash with names and prices and an array of hashes with 
+# names, colors, and weights to make a new hash.
+# For example, {"chair" => 75, "book" => 15} and [{name: "chair", color: "red", weight: 10}, 
+# {name: "book", color: "black", weight: 1}] 
+# becomes {
+#   "chair" => {price: 75, color: "red", weight: 10}, 
+#   "book" => {price: 15, color: "black", weight: 1}
+# }.
+# prices = {"chair" => 75, "book" => 15}
+# items = [
+#   {name: "chair", color: "red", weight: 10},
+#   {name: "book", color: "black", weight: 1}
+# ]
+# items_hash = Hash.new
+# # prices.each do |item, price|
+# #   items_hash[item] = {price: price}
+# # end
+# # puts "items_hash: #{items_hash}"
+
+# # chair_data = items.select {|item| item[:name] == "chair"}
+# # book_data = items.select {|item| item[:name] == "book"}
+# # puts "chair_data: #{chair_data}, book_data: #{book_data}"
+
+# # items.each do |item|
+# #   pp item[:name]
+# # end
+
+# # puts 'prices["chair"]: #{prices["chair"]}'
+
+# items.each do |item|
+#   items_hash[item[:name]] = {price: prices[item[:name]], color: item[:color], weight: item[:weight]}
+# end
+# puts "items_hash: #{items_hash}"
+
+prices = {"chair" => 75, "book" => 15}
+items = [
+  {name: "chair", color: "red", weight: 10},
+  {name: "book", color: "black", weight: 1}
+]
+items_hash = Hash.new
+items.each do |item|
+  items_hash[item[:name]] = {price: prices[item[:name]], color: item[:color], weight: item[:weight]}
 end
-pp flat_array
+puts "items_hash: #{items_hash}"
