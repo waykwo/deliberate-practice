@@ -712,6 +712,15 @@ books.each do |book_info|
 end
 pp book_hash
 
+# 10. Given a hash, create a new hash that has the keys and values switched.
+# For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
+hash = {"a" => 1, "b" => 2, "c" => 3}
+switched = {}
+hash.each do |key, value|
+  switched[value] = key
+end
+pp switched
+
 
 
 

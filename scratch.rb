@@ -823,17 +823,26 @@
 #     {author: "Jeff Smith", title: "RASL"}
 # ]
 #   becomes {"Jeff Smith" => ["Bone", "RASL"], "George Orwell" => ["1984"]}.
-books = [
-  {author: "Jeff Smith", title: "Bone"},
-  {author: "George Orwell", title: "1984"},
-  {author: "Jeff Smith", title: "RASL"}
-]
-book_hash = Hash.new
-books.each do |book_info|
-  if book_hash[book_info[:author]] == nil
-    book_hash[book_info[:author]] = [book_info[:title]]
-  else
-    book_hash[book_info[:author]] << [book_info[:title]]
-  end
+# books = [
+#   {author: "Jeff Smith", title: "Bone"},
+#   {author: "George Orwell", title: "1984"},
+#   {author: "Jeff Smith", title: "RASL"}
+# ]
+# book_hash = Hash.new
+# books.each do |book_info|
+#   if book_hash[book_info[:author]] == nil
+#     book_hash[book_info[:author]] = [book_info[:title]]
+#   else
+#     book_hash[book_info[:author]] << [book_info[:title]]
+#   end
+# end
+# pp book_hash
+
+# 10. Given a hash, create a new hash that has the keys and values switched.
+# For example, {"a" => 1, "b" => 2, "c" => 3} becomes {1 => "a", 2 => "b", 3 => "c"}.
+hash = {"a" => 1, "b" => 2, "c" => 3}
+switched = {}
+hash.each do |key, value|
+  switched[value] = key
 end
-pp book_hash
+pp switched
