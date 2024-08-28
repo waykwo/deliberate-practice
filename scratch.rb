@@ -877,14 +877,26 @@
 ### 05-custom-methods-classes2.md
 
 # 1. Write a Song class with attributes for name, artist, and duration.
-class Song
-  attr_reader :name, :artist, :duration
-  def initialize(input_hash)
-    @name = input_hash[:name]
-    @artist = input_hash[:artist]
-    @duration = input_hash[:duration]
+# class Song
+#   attr_reader :name, :artist, :duration
+#   def initialize(input_hash)
+#     @name = input_hash[:name]
+#     @artist = input_hash[:artist]
+#     @duration = input_hash[:duration]
+#   end
+# end
+
+# song = Song.new({name: "Elmo's Song", artist: "Elmo, Big Bird & Snuffleupagus", duration: "2:31"})
+# pp song
+
+# 2. Write a Rectangle class with attributes for width and height.
+class Rectangle
+  attr_reader :width, :height
+  def initialize(input_width, input_height)
+    @width = input_width
+    @height = input_height
   end
 end
 
-song = Song.new({name: "Elmo's Song", artist: "Elmo, Big Bird & Snuffleupagus", duration: "2:31"})
-pp song
+rectangle = Rectangle.new(15, 33)
+pp rectangle

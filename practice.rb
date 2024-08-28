@@ -762,6 +762,17 @@ end
 song = Song.new({name: "Elmo's Song", artist: "Elmo, Big Bird & Snuffleupagus", duration: "2:31"})
 pp song
 
+# 2. Write a Rectangle class with attributes for width and height.
+class Rectangle
+  attr_reader :width, :height
+  def initialize(input_width, input_height)
+    @width = input_width
+    @height = input_height
+  end
+end
+
+rectangle = Rectangle.new(15, 33)
+pp rectangle
 
 
 
