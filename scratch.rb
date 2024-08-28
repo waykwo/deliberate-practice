@@ -1000,3 +1000,32 @@
 # coordinate = Coordinate.new("40.781944 N", "-73.978333 W")
 # coordinate.location_info
 
+# 5. Write an Account class with attributes and reader/writer methods for name 
+# and balance. Then write a method that prints a warning if the balance is below $100.
+class Account
+  attr_reader :name, :balance
+  attr_writer :name, :balance
+
+  def initialize(name, balance)
+    @name = name
+    @balance = balance
+
+    if @balance < 100
+      puts "The balance of your #{@account} account has fallen below $100. It is now #{@balance}."
+    end
+  end
+
+  # def warning
+  #   if @balance < 100
+  #     puts "The balance of your #{@account} account has fallen below $100. It is now #{@balance}."
+  #   end
+  # end
+
+end
+
+account1 = Account.new("Chequing", 93)
+account2 = Account.new("Savings", 2312)
+# account1.warning
+# account2.warning
+
+# 6.
