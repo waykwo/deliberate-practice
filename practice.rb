@@ -955,7 +955,22 @@ cart.display_items
 cart.remove_item("ball")
 cart.display_items
 
+# 2. Write a Product class that stores the name, price, and metadata, where 
+# metadata is a hash that stores additional information about the product.
+class Product
+  attr_reader :name, :price, :metadata
 
+  def initialize(input_name, input_price, input_metadata)
+    @name = input_name
+    @price = input_price
+    @metadata = input_metadata
+  end
+
+end
+
+product = Product.new("vase", 100, {origin: "Japan"})
+pp product.metadata
+puts "This #{product.name} costs $#{product.price} and is made in #{product.metadata[:origin]}."
 
 
 

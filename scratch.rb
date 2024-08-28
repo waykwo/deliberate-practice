@@ -1054,30 +1054,47 @@
 
 # 1. Write a ShoppingCart class that stores an array of items with methods to 
 # add an item, remove an item, and display all the items.
-class ShoppingCart
+# class ShoppingCart
 
-  def initialize(input_array)
-    @items = input_array
-  end
+#   def initialize(input_array)
+#     @items = input_array
+#   end
 
-  def add_item(item)
-    @items << item
-  end
+#   def add_item(item)
+#     @items << item
+#   end
 
-  def remove_item(item)
-    @items.delete(item)
-  end
+#   def remove_item(item)
+#     @items.delete(item)
+#   end
 
-  def display_items
-    puts "These are the items in your cart:"
-    puts @items
+#   def display_items
+#     puts "These are the items in your cart:"
+#     puts @items
+#   end
+
+# end
+
+# cart = ShoppingCart.new(["ball", "bat", "glove"])
+# cart.display_items
+# cart.add_item("helmet")
+# cart.display_items
+# cart.remove_item("ball")
+# cart.display_items
+
+# 2. Write a Product class that stores the name, price, and metadata, where 
+# metadata is a hash that stores additional information about the product.
+class Product
+  attr_reader :name, :price, :metadata
+
+  def initialize(input_name, input_price, input_metadata)
+    @name = input_name
+    @price = input_price
+    @metadata = input_metadata
   end
 
 end
 
-cart = ShoppingCart.new(["ball", "bat", "glove"])
-cart.display_items
-cart.add_item("helmet")
-cart.display_items
-cart.remove_item("ball")
-cart.display_items
+product = Product.new("vase", 100, {origin: "Japan"})
+pp product.metadata
+puts "This #{product.name} costs $#{product.price} and is made in #{product.metadata[:origin]}."
