@@ -1002,30 +1002,49 @@
 
 # 5. Write an Account class with attributes and reader/writer methods for name 
 # and balance. Then write a method that prints a warning if the balance is below $100.
-class Account
-  attr_reader :name, :balance
-  attr_writer :name, :balance
+# class Account
+#   attr_reader :name, :balance
+#   attr_writer :name, :balance
 
-  def initialize(name, balance)
-    @name = name
-    @balance = balance
+#   def initialize(name, balance)
+#     @name = name
+#     @balance = balance
 
-    if @balance < 100
-      puts "The balance of your #{@account} account has fallen below $100. It is now #{@balance}."
-    end
+#     if @balance < 100
+#       puts "The balance of your #{@account} account has fallen below $100. It is now #{@balance}."
+#     end
+#   end
+
+#   # def warning
+#   #   if @balance < 100
+#   #     puts "The balance of your #{@account} account has fallen below $100. It is now #{@balance}."
+#   #   end
+#   # end
+
+# end
+
+# account1 = Account.new("Chequing", 93)
+# account2 = Account.new("Savings", 2312)
+# # account1.warning
+# # account2.warning
+
+# 6. Write a Movie class with attributes and reader/writer methods for title, 
+# director, and year. Then write a method that prints out the attributes in a single sentence.
+class Movie
+  attr_reader :title, :director, :year
+  attr_writer :title, :director, :year
+
+  def initialize(title, director, year)
+    @title = title
+    @director = director
+    @year = year
   end
 
-  # def warning
-  #   if @balance < 100
-  #     puts "The balance of your #{@account} account has fallen below $100. It is now #{@balance}."
-  #   end
-  # end
+  def print_info
+    puts "The film is #{@title}. It was directed by #{@director} and released in #{year}."
+  end
 
 end
 
-account1 = Account.new("Chequing", 93)
-account2 = Account.new("Savings", 2312)
-# account1.warning
-# account2.warning
-
-# 6.
+movie = Movie.new("Pulp Fiction", "Quentin Tarantino", 1994)
+movie.print_info
