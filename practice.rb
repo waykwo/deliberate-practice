@@ -811,6 +811,26 @@ end
 song = Song.new({name: "Billie Jean", artist: "Michael Jackson", duration: "4:54"})
 song.print_info
 
+# 2. Write a Rectangle class with attributes and reader/writer methods for width 
+# and height. Then write a method that returns the area of the rectangle.
+class Rectangle
+  attr_reader :width, :height
+
+  def initialize(input_width, input_height)
+    @width = input_width
+    @height = input_height
+  end
+
+  def calc_area
+    return @width * @height
+  end
+
+end
+
+living_room = Rectangle.new(15, 21)
+area = living_room.calc_area
+p area
+puts "The rectangle has a width of #{living_room.width}, a height of #{living_room.height}, and an area of #{living_room.calc_area}."
 
 
 

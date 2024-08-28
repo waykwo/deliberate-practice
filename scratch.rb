@@ -919,21 +919,42 @@
 # 1. Write a Song class with attributes and reader/writer methods for name, 
 # artist, and duration. Then write a method that prints the name, artist, and 
 # duration in a single sentence.
-class Song
-  attr_reader :name, :artist, :duration
-  attr_writer :name, :artist, :duration
+# class Song
+#   attr_reader :name, :artist, :duration
+#   attr_writer :name, :artist, :duration
   
-  def initialize(input_hash)
-    @name = input_hash[:name]
-    @artist = input_hash[:artist]
-    @duration = input_hash[:duration]
+#   def initialize(input_hash)
+#     @name = input_hash[:name]
+#     @artist = input_hash[:artist]
+#     @duration = input_hash[:duration]
+#   end
+
+#   def print_info
+#     puts "The song is #{@name} by #{@artist} with a duration of #{@duration}."
+#   end
+
+# end
+
+# song = Song.new({name: "Billie Jean", artist: "Michael Jackson", duration: "4:54"})
+# song.print_info
+
+# 2. Write a Rectangle class with attributes and reader/writer methods for width 
+# and height. Then write a method that returns the area of the rectangle.
+class Rectangle
+  attr_reader :width, :height
+
+  def initialize(input_width, input_height)
+    @width = input_width
+    @height = input_height
   end
 
-  def print_info
-    puts "The song is #{@name} by #{@artist} with a duration of #{@duration}."
+  def calc_area
+    return @width * @height
   end
 
 end
 
-song = Song.new({name: "Billie Jean", artist: "Michael Jackson", duration: "4:54"})
-song.print_info
+living_room = Rectangle.new(15, 21)
+area = living_room.calc_area
+p area
+puts "The rectangle has a width of #{living_room.width}, a height of #{living_room.height}, and an area of #{living_room.calc_area}."
