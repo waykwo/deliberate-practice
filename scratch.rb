@@ -1030,21 +1030,54 @@
 
 # 6. Write a Movie class with attributes and reader/writer methods for title, 
 # director, and year. Then write a method that prints out the attributes in a single sentence.
-class Movie
-  attr_reader :title, :director, :year
-  attr_writer :title, :director, :year
+# class Movie
+#   attr_reader :title, :director, :year
+#   attr_writer :title, :director, :year
 
-  def initialize(title, director, year)
-    @title = title
-    @director = director
-    @year = year
+#   def initialize(title, director, year)
+#     @title = title
+#     @director = director
+#     @year = year
+#   end
+
+#   def print_info
+#     puts "The film is #{@title}. It was directed by #{@director} and released in #{year}."
+#   end
+
+# end
+
+# movie = Movie.new("Pulp Fiction", "Quentin Tarantino", 1994)
+# movie.print_info
+
+
+### exercises/05-custom-methods-classes4.md
+
+# 1. Write a ShoppingCart class that stores an array of items with methods to 
+# add an item, remove an item, and display all the items.
+class ShoppingCart
+
+  def initialize(input_array)
+    @items = input_array
   end
 
-  def print_info
-    puts "The film is #{@title}. It was directed by #{@director} and released in #{year}."
+  def add_item(item)
+    @items << item
+  end
+
+  def remove_item(item)
+    @items.delete(item)
+  end
+
+  def display_items
+    puts "These are the items in your cart:"
+    puts @items
   end
 
 end
 
-movie = Movie.new("Pulp Fiction", "Quentin Tarantino", 1994)
-movie.print_info
+cart = ShoppingCart.new(["ball", "bat", "glove"])
+cart.display_items
+cart.add_item("helmet")
+cart.display_items
+cart.remove_item("ball")
+cart.display_items

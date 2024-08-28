@@ -923,6 +923,39 @@ movie = Movie.new("Pulp Fiction", "Quentin Tarantino", 1994)
 movie.print_info
 
 
+### exercises/05-custom-methods-classes4.md
+
+# 1. Write a ShoppingCart class that stores an array of items with methods to 
+# add an item, remove an item, and display all the items.
+class ShoppingCart
+
+  def initialize(input_array)
+    @items = input_array
+  end
+
+  def add_item(item)
+    @items << item
+  end
+
+  def remove_item(item)
+    @items.delete(item)
+  end
+
+  def display_items
+    puts "These are the items in your cart:"
+    puts @items
+  end
+
+end
+
+cart = ShoppingCart.new(["ball", "bat", "glove"])
+cart.display_items
+cart.add_item("helmet")
+cart.display_items
+cart.remove_item("ball")
+cart.display_items
+
+
 
 
 
