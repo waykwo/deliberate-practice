@@ -774,6 +774,19 @@ end
 rectangle = Rectangle.new(15, 33)
 pp rectangle
 
+# 3. Write a Person class with attributes for name and age.
+class Person
+  attr_reader :name, :age
+  def initialize(person_hash)
+    @name = person_hash[:name]
+    @age = person_hash[:age]
+  end
+end
+
+alice = Person.new({name: "Alice", age: 28})
+pp alice
+
+
 
 
 # QUESTION 1

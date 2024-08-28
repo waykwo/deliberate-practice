@@ -890,13 +890,25 @@
 # pp song
 
 # 2. Write a Rectangle class with attributes for width and height.
-class Rectangle
-  attr_reader :width, :height
-  def initialize(input_width, input_height)
-    @width = input_width
-    @height = input_height
+# class Rectangle
+#   attr_reader :width, :height
+#   def initialize(input_width, input_height)
+#     @width = input_width
+#     @height = input_height
+#   end
+# end
+
+# rectangle = Rectangle.new(15, 33)
+# pp rectangle
+
+# 3. Write a Person class with attributes for name and age.
+class Person
+  attr_reader :name, :age
+  def initialize(person_hash)
+    @name = person_hash[:name]
+    @age = person_hash[:age]
   end
 end
 
-rectangle = Rectangle.new(15, 33)
-pp rectangle
+alice = Person.new({name: "Alice", age: 28})
+pp alice
