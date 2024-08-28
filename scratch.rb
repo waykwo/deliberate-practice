@@ -902,13 +902,38 @@
 # pp rectangle
 
 # 3. Write a Person class with attributes for name and age.
-class Person
-  attr_reader :name, :age
-  def initialize(person_hash)
-    @name = person_hash[:name]
-    @age = person_hash[:age]
+# class Person
+#   attr_reader :name, :age
+#   def initialize(person_hash)
+#     @name = person_hash[:name]
+#     @age = person_hash[:age]
+#   end
+# end
+
+# alice = Person.new({name: "Alice", age: 28})
+# pp alice
+
+
+### exercises/05-custom-methods-classes3.md
+
+# 1. Write a Song class with attributes and reader/writer methods for name, 
+# artist, and duration. Then write a method that prints the name, artist, and 
+# duration in a single sentence.
+class Song
+  attr_reader :name, :artist, :duration
+  attr_writer :name, :artist, :duration
+  
+  def initialize(input_hash)
+    @name = input_hash[:name]
+    @artist = input_hash[:artist]
+    @duration = input_hash[:duration]
   end
+
+  def print_info
+    puts "The song is #{@name} by #{@artist} with a duration of #{@duration}."
+  end
+
 end
 
-alice = Person.new({name: "Alice", age: 28})
-pp alice
+song = Song.new({name: "Billie Jean", artist: "Michael Jackson", duration: "4:54"})
+song.print_info
