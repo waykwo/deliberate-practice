@@ -940,21 +940,41 @@
 
 # 2. Write a Rectangle class with attributes and reader/writer methods for width 
 # and height. Then write a method that returns the area of the rectangle.
-class Rectangle
-  attr_reader :width, :height
+# class Rectangle
+#   attr_reader :width, :height
 
-  def initialize(input_width, input_height)
-    @width = input_width
-    @height = input_height
+#   def initialize(input_width, input_height)
+#     @width = input_width
+#     @height = input_height
+#   end
+
+#   def calc_area
+#     return @width * @height
+#   end
+
+# end
+
+# living_room = Rectangle.new(15, 21)
+# area = living_room.calc_area
+# p area
+# puts "The rectangle has a width of #{living_room.width}, a height of #{living_room.height}, and an area of #{living_room.calc_area}."
+
+# 3. Write a Person class with attributes and reader/writer methods for name and 
+# age. Then write a method that returns the person's name in all capital letters.
+class Person
+  attr_reader :name, :age
+  attr_writer :name, :age
+
+  def initialize(name, age)
+    @name = name
+    @age = age
   end
 
-  def calc_area
-    return @width * @height
+  def cap_name
+    return @name.upcase
   end
 
 end
 
-living_room = Rectangle.new(15, 21)
-area = living_room.calc_area
-p area
-puts "The rectangle has a width of #{living_room.width}, a height of #{living_room.height}, and an area of #{living_room.calc_area}."
+person = Person.new("Buddy", 4)
+p person.cap_name

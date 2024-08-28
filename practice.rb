@@ -832,6 +832,28 @@ area = living_room.calc_area
 p area
 puts "The rectangle has a width of #{living_room.width}, a height of #{living_room.height}, and an area of #{living_room.calc_area}."
 
+# 3. Write a Person class with attributes and reader/writer methods for name and 
+# age. Then write a method that returns the person's name in all capital letters.
+class Person
+  attr_reader :name, :age
+  attr_writer :name, :age
+
+  def initialize(name, age)
+    @name = name
+    @age = age
+  end
+
+  def cap_name
+    return @name.upcase
+  end
+
+end
+
+person = Person.new("Buddy", 4)
+p person.cap_name
+
+
+
 
 
 
