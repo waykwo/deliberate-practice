@@ -961,20 +961,42 @@
 
 # 3. Write a Person class with attributes and reader/writer methods for name and 
 # age. Then write a method that returns the person's name in all capital letters.
-class Person
-  attr_reader :name, :age
-  attr_writer :name, :age
+# class Person
+#   attr_reader :name, :age
+#   attr_writer :name, :age
 
-  def initialize(name, age)
-    @name = name
-    @age = age
-  end
+#   def initialize(name, age)
+#     @name = name
+#     @age = age
+#   end
 
-  def cap_name
-    return @name.upcase
-  end
+#   def cap_name
+#     return @name.upcase
+#   end
 
-end
+# end
 
-person = Person.new("Buddy", 4)
-p person.cap_name
+# person = Person.new("Buddy", 4)
+# p person.cap_name
+
+# 4. Write a Coordinate class with attributes and reader/writer methods for 
+# latitude and longitude. Then write a method that prints out the latitude and 
+# longitude in a single sentence.
+# class Coordinate
+#   attr_reader :latitude, :longitude
+#   attr_writer :latitude, :longitude
+
+#   def initialize(latitude, longitude)
+#     @latitude = latitude
+#     @longitude = longitude
+#   end
+
+#   def location_info
+#     puts "The coordiantes are #{latitude}, #{longitude}."
+#   end
+
+# end
+
+# coordinate = Coordinate.new("40.781944 N", "-73.978333 W")
+# coordinate.location_info
+

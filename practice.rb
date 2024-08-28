@@ -852,6 +852,26 @@ end
 person = Person.new("Buddy", 4)
 p person.cap_name
 
+# 4. Write a Coordinate class with attributes and reader/writer methods for 
+# latitude and longitude. Then write a method that prints out the latitude and 
+# longitude in a single sentence.
+class Coordinate
+  attr_reader :latitude, :longitude
+  attr_writer :latitude, :longitude
+
+  def initialize(latitude, longitude)
+    @latitude = latitude
+    @longitude = longitude
+  end
+
+  def location_info
+    puts "The coordiantes are #{latitude}, #{longitude}."
+  end
+
+end
+
+coordinate = Coordinate.new("40.781944 N", "-73.978333 W")
+coordinate.location_info
 
 
 
