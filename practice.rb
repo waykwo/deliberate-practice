@@ -739,6 +739,28 @@ end
 
 pp all_cap("test")
 
+# 5. Write a method that takes in a string and returns the first letter of the 
+# string. Then run the method and print the result.
+def first_letter(string)
+  return string.split(//)[0]
+end
+pp first_letter("hello")
+
+
+### 05-custom-methods-classes2.md
+
+# 1. Write a Song class with attributes for name, artist, and duration.
+class Song
+  attr_reader :name, :artist, :duration
+  def initialize(input_hash)
+    @name = input_hash[:name]
+    @artist = input_hash[:artist]
+    @duration = input_hash[:duration]
+  end
+end
+
+song = Song.new({name: "Elmo's Song", artist: "Elmo, Big Bird & Snuffleupagus", duration: "2:31"})
+pp song
 
 
 
