@@ -1102,39 +1102,58 @@
 # 3. Write a Playlist class that stores a name and an array of songs with 
 # methods to add a song, remove a song, shuffle the songs into a random order, 
 # and display all the songs.
-class Playlist
-  attr_reader :playlist_name, :songs
-  attr_writer :playlist_name, :songs
+# class Playlist
+#   attr_reader :playlist_name, :songs
+#   attr_writer :playlist_name, :songs
 
-  def initialize(input_playlist_name, songs_array)
-    @playlist_name = input_playlist_name
-    @songs = songs_array
-  end
+#   def initialize(input_playlist_name, songs_array)
+#     @playlist_name = input_playlist_name
+#     @songs = songs_array
+#   end
 
-  def add_song(song)
-    @songs << song
-    puts "#{song} has been added!"
-  end
+#   def add_song(song)
+#     @songs << song
+#     puts "#{song} has been added!"
+#   end
 
-  def remove_song(song)
-    @songs.delete(song)
-  end
+#   def remove_song(song)
+#     @songs.delete(song)
+#   end
 
-  def shuffle_songs
-    return @songs.shuffle
-  end
+#   def shuffle_songs
+#     return @songs.shuffle
+#   end
 
-  def display_all
-    puts @songs
+#   def display_all
+#     puts @songs
+#   end
+
+# end
+
+# playlist = Playlist.new("kids", ["Elmo's Song", "Rainbow Connection"])
+# playlist.display_all
+# puts "==="
+# playlist.add_song("Skinnamarink")
+# playlist.display_all
+# puts "==="
+# playlist.remove_song("Skinnamarink")
+# playlist.display_all
+
+# 4. Write a Contact class that stores the name, age, and contact_info, where 
+# contact_info is a hash that stores any additional information about the contact.
+class Contact
+  attr_reader :name, :age, :contact_info
+  attr_writer :name, :age, :contact_info
+
+  def initialize(input_name, input_age, input_contact_info)
+    @name = input_name
+    @age = input_age
+    @contact_info = input_contact_info
   end
 
 end
 
-playlist = Playlist.new("kids", ["Elmo's Song", "Rainbow Connection"])
-playlist.display_all
-puts "==="
-playlist.add_song("Skinnamarink")
-playlist.display_all
-puts "==="
-playlist.remove_song("Skinnamarink")
-playlist.display_all
+contact = Contact.new("Jeff Bezos", 60, {email: "jeff@amazon.com", phone: "321-555-5555"})
+p contact.name
+p contact.age
+p contact.contact_info

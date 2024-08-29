@@ -1012,7 +1012,24 @@ puts "==="
 playlist.remove_song("Skinnamarink")
 playlist.display_all
 
+# 4. Write a Contact class that stores the name, age, and contact_info, where 
+# contact_info is a hash that stores any additional information about the contact.
+class Contact
+  attr_reader :name, :age, :contact_info
+  attr_writer :name, :age, :contact_info
 
+  def initialize(input_name, input_age, input_contact_info)
+    @name = input_name
+    @age = input_age
+    @contact_info = input_contact_info
+  end
+
+end
+
+contact = Contact.new("Jeff Bezos", 60, {email: "jeff@amazon.com", phone: "321-555-5555"})
+p contact.name
+p contact.age
+p contact.contact_info
 
 
 # QUESTION 1
