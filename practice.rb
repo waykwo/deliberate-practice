@@ -972,6 +972,47 @@ product = Product.new("vase", 100, {origin: "Japan"})
 pp product.metadata
 puts "This #{product.name} costs $#{product.price} and is made in #{product.metadata[:origin]}."
 
+# 3. Write a Playlist class that stores a name and an array of songs with 
+# methods to add a song, remove a song, shuffle the songs into a random order, 
+# and display all the songs.
+class Playlist
+  attr_reader :playlist_name, :songs
+  attr_writer :playlist_name, :songs
+
+  def initialize(input_playlist_name, songs_array)
+    @playlist_name = input_playlist_name
+    @songs = songs_array
+  end
+
+  def add_song(song)
+    @songs << song
+    puts "#{song} has been added!"
+  end
+
+  def remove_song(song)
+    @songs.delete(song)
+  end
+
+  def shuffle_songs
+    return @songs.shuffle
+  end
+
+  def display_all
+    puts @songs
+  end
+
+end
+
+playlist = Playlist.new("kids", ["Elmo's Song", "Rainbow Connection"])
+playlist.display_all
+puts "==="
+playlist.add_song("Skinnamarink")
+playlist.display_all
+puts "==="
+playlist.remove_song("Skinnamarink")
+playlist.display_all
+
+
 
 
 # QUESTION 1
