@@ -100,9 +100,21 @@ console.log(`I\'m currently reading ${title} by ${author}.`);
 // 9. Write a program that asks the user to enter a password. If the password is 
 // "Joshua", the program responds "Shall we play a game?". For any other password, 
 // the program responds "Access denied"
-let password = prompt("Please enter a password");
+let password = prompt("Please enter a password:");
 if (password === "Joshua") {
     console.log("Shall we play a game?");
 } else {
     console.log("Access Denied");
-}
+};
+
+// 10. Write a program that uses variables to store the names of three cities, 
+// then prints out a sentence using that information with string concatenation 
+// (the + operator).
+let city1 = "Chicago";
+let city2 = "Toronto";
+let city3 = "San Francisco";
+console.log(`I would like to visit ${city1}, ${city2}, and ${city3}.`)
+
+
+// === exercises/02-conditionals1.md
+
