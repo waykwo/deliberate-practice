@@ -100,3 +100,9 @@ console.log(`I\'m currently reading ${title} by ${author}.`);
 // 9. Write a program that asks the user to enter a password. If the password is 
 // "Joshua", the program responds "Shall we play a game?". For any other password, 
 // the program responds "Access denied"
+let password = prompt("Please enter a password");
+if (password === "Joshua") {
+    console.log("Shall we play a game?");
+} else {
+    console.log("Access Denied");
+}
