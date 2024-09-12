@@ -78,7 +78,25 @@ let colour1 = "red", colour2 = "green", colour3 = "blue";
 console.log(`The colours are: ${colour1}, ${colour2}, and ${colour3}.`);
 
 // 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
-let name = prompt("Please enter your name:")
+let name = prompt("Please enter your name:");
 if (name !== "Santa") {
     console.log("You're not Santa.")
 }
+
+// 7. Write a program that uses variables to store a book's title and author, 
+// then prints out a sentence using that information with string concatenation 
+// (the + operator).
+let title = "Atomic Habits";
+let author = "James Clear";
+console.log("I'm currently reading " + title + " by " + author + ".");
+
+// 8. Write a program that uses variables to store a book's title and author, 
+// then prints out a sentence using that information with string interpolation 
+// (the #{} operator).
+let title = "Atomic Habits";
+let author = "James Clear";
+console.log(`I\'m currently reading ${title} by ${author}.`);
+
+// 9. Write a program that asks the user to enter a password. If the password is 
+// "Joshua", the program responds "Shall we play a game?". For any other password, 
+// the program responds "Access denied"

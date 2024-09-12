@@ -14,7 +14,19 @@ num_2 = 6
 print(num_1 + num_2)
 
 # 4. Write a program that uses a variable to store a word, then prints that word in reverse order.
+word = "hello"
+reversed = ""
+for i in range(1, len(word)):
+    # print(word[i * -1])
+    reversed += word[i * -1]
+# print(word[0])
+# print("===")
+reversed += word[0]
+print(reversed)
 
+#   Alt
+word = "world"
+print(word[::-1])
 
 # 5. Write a program that uses a variable to store a number, then prints the number times 10.
 number = 8
