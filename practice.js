@@ -139,3 +139,12 @@ if (number < 10) {
     console.log(0);
 };
 
+// 3. Use variables to store two numbers, then write a condition that prints 1 
+// if the numbers are both less than 10, and prints 0 otherwise.
+let num1 = Math.floor(Math.random() * 20) + 1;
+let num2 = Math.floor(Math.random() * 20) + 1;
+if (num1 < 10 && num2 < 10) {
+    console.log(`1 - ${num1}, ${num2}`)
+} else {
+    console.log(`0 - ${num1}, ${num2}`)
+}
