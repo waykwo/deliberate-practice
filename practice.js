@@ -183,3 +183,21 @@ if (num1 < 0 && num2 > 0) {
 } else {
     console.log(0);
 }
+
+// 10. Use a variable to store a number, then write a condition that prints 5 
+// if the number is greater than 80, prints 4 if the number is greater than 60, 
+// prints 3 if the number is greater than 40, prints 2 if the number is greater 
+// than 20, and prints 1 otherwise (only one print statement should occur).
+let num = Math.floor(getRandomArbitrary(0, 90));
+console.log(`The number is ${num}.`);
+if (num > 80) {
+    console.log(5);
+} else if (num > 60) {
+    console.log(4);
+} else if (num > 40) {
+    console.log(3);
+} else if (num > 20) {
+    console.log(2);
+} else {
+    console.log(1);
+}
