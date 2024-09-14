@@ -218,7 +218,7 @@ let time = Math.floor(getRandomArbitrary(4, 10));
 let price;
 if (age <= 12) {
     price = 5
-} else if ((13 < age < 60 && time < 6) || age > 60) {
+} else if ((age > 13 && age < 60 && time < 6) || age > 60) {
     price = 7
 } else {
     price = 10
@@ -252,10 +252,10 @@ if (bookType === "regular" && overdueDays <= 7) {
 } else if (bookType === "collection") {
     fine = overdueDays * 5;
 } else {
-    console.log("Error with conditions!")
+    console.log("Error with conditions!");
 };
 
-console.log(`Overdue days: ${overdueDays}; Fine: ${fine}`)
+console.log(`Overdue days: ${overdueDays}; Fine: ${fine}`);
 
 // 3. Write a program that stores a person's order value and membership level 
 // (regular or premium). Then calculate a discount amount based on the following 
@@ -276,17 +276,19 @@ let discount;
 
 if (orderValue < 50) {
     discount = 0;
-} else if (50 <= orderValue <= 100) {
+} else if (orderValue >= 50 && orderValue <= 100) {
     if (membership === "regular") {
         discount = 0.05;
     } else if (membership === "premium") {
         discount = 0.1;
     };
-} else {
+} else if (orderValue > 100) {
     if (membership === "regular") {
         discount = 0.1;
     } else if (membership === "premium") {
         discount = 0.15;
     };
+} else {
+    console.log("Error with conditions!");
 };
-console.log(`Order Value: ${orderValue}; Discount: ${discount}`)
+console.log(`Order Value: ${orderValue}; Discount: ${discount}`);
