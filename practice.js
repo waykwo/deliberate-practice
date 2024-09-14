@@ -144,7 +144,42 @@ if (number < 10) {
 let num1 = Math.floor(Math.random() * 20) + 1;
 let num2 = Math.floor(Math.random() * 20) + 1;
 if (num1 < 10 && num2 < 10) {
-    console.log(`1 - ${num1}, ${num2}`)
+    console.log(`1 - ${num1}, ${num2}`);
 } else {
-    console.log(`0 - ${num1}, ${num2}`)
+    console.log(`0 - ${num1}, ${num2}`);
+};
+
+// 5. Use a variable to store a number, then write a condition that prints 9 if 
+// the number is less than 10, prints 19 if the number is less than 20, prints 
+// 29 if the number is less than 30, and prints -1 otherwise (only one print 
+// statement should occur).
+let num = Math.floor(Math.random() * 40) + 1;
+console.log(`The number is ${num}.`);
+if (num < 10) {
+    console.log(9);
+} else if (num < 20) {
+    console.log(19);
+} else if (num < 30) {
+    console.log(29);
+} else {
+    console.log(-1);
+};
+
+// Random number function between min and max
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+console.log(getRandomArbitrary(5, 15)); // Outputs a random number between 5 
+// and 15
+
+// 9. Use variables to store two numbers, then write a condition that prints 1 
+// if the first number is less than zero and the second number is greater than 
+// 0, and prints 0 otherwise.
+let num1 = Math.floor(getRandomArbitrary(-10, 10));
+let num2 = Math.floor(getRandomArbitrary(-10, 10));
+console.log(`num1 = ${num1}, num2 = ${num2}`);
+if (num1 < 0 && num2 > 0) {
+    console.log(1);
+} else {
+    console.log(0);
 }
