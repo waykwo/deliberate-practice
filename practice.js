@@ -1,3 +1,11 @@
+// Random number function between min and max
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+console.log(getRandomArbitrary(5, 15)); // Outputs a random number between 5 
+// and 15
+
+
 // 01-variables1
 
 // 1. Write a program that uses a variable to store a number, then prints that number plus 10.
@@ -165,13 +173,6 @@ if (num < 10) {
     console.log(-1);
 };
 
-// Random number function between min and max
-function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-}
-console.log(getRandomArbitrary(5, 15)); // Outputs a random number between 5 
-// and 15
-
 // 9. Use variables to store two numbers, then write a condition that prints 1 
 // if the first number is less than zero and the second number is greater than 
 // 0, and prints 0 otherwise.
@@ -208,11 +209,10 @@ if (num > 80) {
 // 1. Write a program that stores a customer's age and a movie's time in two 
 // separate variables. Then calculate the price of a movie ticket based on the 
 // following conditions:
-
-// If the age is 12 years old or younger, the ticket price is $5.
-// If the age is between 13 and 59 years old and the movie is before 6 PM, the 
-//  ticket price is $7. After 6 PM, the ticket price is $10.
-// If the customer is 60 years old or older, the ticket price is $7.
+    // If the age is 12 years old or younger, the ticket price is $5.
+    // If the age is between 13 and 59 years old and the movie is before 6 PM, the 
+    //  ticket price is $7. After 6 PM, the ticket price is $10.
+    // If the customer is 60 years old or older, the ticket price is $7.
 let age = Math.floor(getRandomArbitrary(4, 70));
 let time = Math.floor(getRandomArbitrary(4, 10));
 let price;
@@ -228,14 +228,13 @@ console.log(`Age: ${age}, Time: ${time}, Price: ${price}`)
 // 2. Write a program to store the type of book (regular, reference, or special 
 // collection) and the number of days its overdue. Then calculate the fine 
 // amount based on the following conditions:
-
-// If the book is a regular book and overdue by up to 7 days, the fine is $1 per day.
-// If the book is a regular book and overdue by more than 7 days, the fine is 
-//  $2 per day.
-// If the book is a reference book, there is no fine, regardless of the number 
-//  of days overdue.
-// If the book is a special collection book, the fine is $5 per day, regardless 
-//  of the number of days overdue.
+    // If the book is a regular book and overdue by up to 7 days, the fine is $1 per day.
+    // If the book is a regular book and overdue by more than 7 days, the fine is 
+    //  $2 per day.
+    // If the book is a reference book, there is no fine, regardless of the number 
+    //  of days overdue.
+    // If the book is a special collection book, the fine is $5 per day, regardless 
+    //  of the number of days overdue.
 const bookTypes = ["regular", "reference", "collection"];
 const random = Math.floor(Math.random() * bookTypes.length);
 let bookType = bookTypes[random];
@@ -257,3 +256,37 @@ if (bookType === "regular" && overdueDays <= 7) {
 };
 
 console.log(`Overdue days: ${overdueDays}; Fine: ${fine}`)
+
+// 3. Write a program that stores a person's order value and membership level 
+// (regular or premium). Then calculate a discount amount based on the following 
+// conditions:
+    // If the total order value is less than $50, there is no discount.
+    // If the total order value is between $50 and $100, the discount is 5% for 
+    //  regular customers and 10% for premium customers.
+    // If the total order value is greater than $100, the discount is 10% for 
+    //  regular customers and 15% for premium customers.
+
+const memberships = ["regular", "premium"];
+const random = Math.floor(Math.random() * memberships.length);
+let membership = memberships[random];
+console.log(`Membership type: ${membership}`);
+
+let orderValue = Math.floor(getRandomArbitrary(25, 125));
+let discount;
+
+if (orderValue < 50) {
+    discount = 0;
+} else if (50 <= orderValue <= 100) {
+    if (membership === "regular") {
+        discount = 0.05;
+    } else if (membership === "premium") {
+        discount = 0.1;
+    };
+} else {
+    if (membership === "regular") {
+        discount = 0.1;
+    } else if (membership === "premium") {
+        discount = 0.15;
+    };
+};
+console.log(`Order Value: ${orderValue}; Discount: ${discount}`)
