@@ -292,3 +292,34 @@ if (orderValue < 50) {
     console.log("Error with conditions!");
 };
 console.log(`Order Value: ${orderValue}; Discount: ${discount}`);
+
+// 4. Write a program that stores the weight of a package and the destination 
+// (domestic or international). Then calculate the shipping fee based on the 
+// following conditions:
+    // If the destination is domestic:
+    // If the weight is less than or equal to 1 kg, the shipping fee is $5.
+    // If the weight is greater than 1 kg, the shipping fee is $10.
+    // If the destination is an international shipment:
+    // If the weight is less than or equal to 1 kg, the shipping fee is $15.
+    // If the weight is greater than 1 kg, the shipping fee is $25.
+const destinations = ["domestic", "international"];
+const random = Math.floor(Math.random() * destinations.length);
+let destination = destinations[random];
+
+let weight = getRandomArbitrary(0.1, 2);
+let shipping;
+
+if (destination === "domestic") {
+    if (weight <= 1) {
+        shipping = 5;
+    } else {
+        shipping = 10;
+    };
+} else if (destination === "international") {
+    if (weight <= 1) {
+        shipping = 15;
+    } else {
+        shipping = 25;
+    };
+};
+console.log(`Destination: ${destination}; Weight: ${weight}; Shipping: ${shipping}`)
