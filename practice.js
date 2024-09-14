@@ -323,3 +323,11 @@ if (destination === "domestic") {
     };
 };
 console.log(`Destination: ${destination}; Weight: ${weight}; Shipping: ${shipping}`)
+
+
+// 03-loops1.md
+
+// 1. Write a while loop to print the numbers 1 through 10.
+for (let num = 1; num <= 10; num++) {
+    console.log(num)
+}
