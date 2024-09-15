@@ -1,8 +1,12 @@
-let array = ["winner", "winner", "chicken", "dinner"];
-let startsWithW = [];
-array.forEach((string) => {
-  if (string.startsWith("w")) {
-    startsWithW.push(string);
+let items = [
+  {name: "chair", price: 100},
+  {name: "pencil", price: 1},
+  {name: "book", price: 4}
+];
+let pricesOverFive = [];
+items.forEach((item) => {
+  if (item.price > 5) {
+    pricesOverFive.push(item);
   };
 });
-console.log(startsWithW);
+console.log(pricesOverFive);
