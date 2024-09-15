@@ -509,3 +509,31 @@ array.forEach((number) => {
   arrayStrings.push(number.toString());
 });
 console.log(arrayStrings);
+
+
+// 03-loops3.md
+
+// 1. Start with an array of numbers and create a new array with only the 
+// numbers less than 20.
+// For example, [2, 32, 80, 18, 12, 3] becomes [2, 18, 12, 3].
+let array = [2, 32, 80, 18, 12, 3];
+let lessThanTwenty = [];
+array.forEach((number) => {
+  if (number < 20) {
+    lessThanTwenty.push(number);
+  };
+});
+console.log(lessThanTwenty);
+
+// 2. Start with an array of strings and create a new array with only the 
+// strings that start with the letter "w".
+// For example, ["winner", "winner", "chicken", "dinner"] 
+// becomes ["winner", "winner"].
+let array = ["winner", "winner", "chicken", "dinner"];
+let startsWithW = [];
+array.forEach((string) => {
+  if (string[0] == "w") {
+    startsWithW.push(string);
+  };
+});
+console.log(startsWithW);

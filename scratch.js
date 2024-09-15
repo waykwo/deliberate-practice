@@ -1,6 +1,8 @@
-let array = [1, 2, 3];
-let arrayStrings = [];
-array.forEach((number) => {
-  arrayStrings.push(number.toString());
+let array = ["winner", "winner", "chicken", "dinner"];
+let startsWithW = [];
+array.forEach((string) => {
+  if (string[0] == "w") {
+    startsWithW.push(string);
+  };
 });
-console.log(arrayStrings);
+console.log(startsWithW);
