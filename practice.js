@@ -607,3 +607,16 @@ let itemsShortNames = []
   };
 });
 console.log(itemsShortNames);
+
+// 7. Start with an array of numbers and create a new array with only the 
+// numbers greater than or equal to 23.
+// For example, [8, 23, 0, 44, 1980, 3] becomes [23, 44, 1980].
+let numbers = [8, 23, 0, 44, 1980, 3];
+let twentyThreeOrHigher = [];
+numbers.forEach((number) => {
+  if (number >= 23) {
+    twentyThreeOrHigher.push(number);
+  };
+});
+console.log(twentyThreeOrHigher);
+
