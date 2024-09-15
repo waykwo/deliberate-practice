@@ -835,3 +835,17 @@ console.log(flattened);
 let array = [[1, 3], [8, 9], [2, 16]];
 let flattened = array.flat();
 console.log(flattened);
+
+// 2. Use a nested loop with two arrays of strings to create a new array of 
+// strings with each string combined.
+// For example, ["a", "b", "c"] and ["d", "e", "f", "g"] becomes 
+// ["ad", "ae", "af", "ag", "bd", "be", "bf", "bg", "cd", "ce", "cf", "cg"].
+let foo = ["a", "b", "c"];
+let bar = ["d", "e", "f", "g"];
+let combined = [];
+foo.forEach((x) => {
+  bar.forEach((y) => {
+    combined.push(x + y);
+  });
+});
+console.log(combined);

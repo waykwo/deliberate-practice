@@ -1,3 +1,9 @@
-let array = [[1, 3], [8, 9], [2, 16]];
-let flattened = array.flat();
-console.log(flattened);
+let foo = ["a", "b", "c"];
+let bar = ["d", "e", "f", "g"];
+let combined = [];
+foo.forEach((x) => {
+  bar.forEach((y) => {
+    combined.push(x + y);
+  });
+});
+console.log(combined);
