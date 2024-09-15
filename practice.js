@@ -499,3 +499,13 @@ people.forEach((person) => {
   agesTimesTwo.push(person.age * 2);
 });
 console.log(agesTimesTwo);
+
+// 10. Start with an array of numbers and create a new array with each number 
+// converted into a string.
+// For example, [1, 2, 3] becomes ["1", "2", "3"].
+let array = [1, 2, 3];
+let arrayStrings = [];
+array.forEach((number) => {
+  arrayStrings.push(number.toString());
+});
+console.log(arrayStrings);
