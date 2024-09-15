@@ -1,12 +1,8 @@
-let items = [
-  {name: "chair", price: 100},
-  {name: "pencil", price: 1}, 
-  {name: "book", price: 4}
-];
-let cheapItems = [];
-items.forEach((item) => {
-  if (item.price < 10) {
-    cheapItems.push(item);
+let numbers = [2, 4, 5, 1, 8, 9, 7];
+let oddNumbers = [];
+numbers.forEach((number) => {
+  if (number % 2 !== 0) {
+    oddNumbers.push(number);
   };
 });
-console.log(cheapItems);
+console.log(oddNumbers);
