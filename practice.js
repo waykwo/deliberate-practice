@@ -1,6 +1,6 @@
 // Random number function between min and max
 function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
+  return Math.random() * (max - min) + min;
 }
 console.log(getRandomArbitrary(5, 15)); // Outputs a random number between 5 
 // and 15
@@ -68,7 +68,7 @@ console.log(`${first} ${last}`);
 // 3. Write a program that asks the user to input a word. If the word is "marco", print "polo".
 let word = prompt("Please enter a word:");
 if (word === "marco") {
-    console.log("polo");
+  console.log("polo");
 }
 
 // 4. Write a program that uses variables to store three different colors, then 
@@ -88,7 +88,7 @@ console.log(`The colours are: ${colour1}, ${colour2}, and ${colour3}.`);
 // 6. Write a program that asks the user to enter a name. If the name is not "Santa", print "You're not Santa."
 let name = prompt("Please enter your name:");
 if (name !== "Santa") {
-    console.log("You're not Santa.")
+  console.log("You're not Santa.")
 }
 
 // 7. Write a program that uses variables to store a book's title and author, 
@@ -110,9 +110,9 @@ console.log(`I\'m currently reading ${title} by ${author}.`);
 // the program responds "Access denied"
 let password = prompt("Please enter a password:");
 if (password === "Joshua") {
-    console.log("Shall we play a game?");
+  console.log("Shall we play a game?");
 } else {
-    console.log("Access Denied");
+  console.log("Access Denied");
 };
 
 // 10. Write a program that uses variables to store the names of three cities, 
@@ -130,9 +130,9 @@ console.log(`I would like to visit ${city1}, ${city2}, and ${city3}.`)
 // the number is equal to 10, and prints -1 otherwise.
 let number = 10;
 if (number === 10) {
-    console.log(0);
+  console.log(0);
 } else {
-    console.log(-1);
+  console.log(-1);
 };
 
 // 2. Use a variable to store a number, then write a condition that prints -1 
@@ -140,11 +140,11 @@ if (number === 10) {
 // and prints 0 if the number is equal to 10.
 let number = 10;
 if (number < 10) {
-    console.log(-1);
+  console.log(-1);
 } else if (number > 10) {
-    console.log(1);
+  console.log(1);
 } else {
-    console.log(0);
+  console.log(0);
 };
 
 // 3. Use variables to store two numbers, then write a condition that prints 1 
@@ -152,9 +152,9 @@ if (number < 10) {
 let num1 = Math.floor(Math.random() * 20) + 1;
 let num2 = Math.floor(Math.random() * 20) + 1;
 if (num1 < 10 && num2 < 10) {
-    console.log(`1 - ${num1}, ${num2}`);
+  console.log(`1 - ${num1}, ${num2}`);
 } else {
-    console.log(`0 - ${num1}, ${num2}`);
+  console.log(`0 - ${num1}, ${num2}`);
 };
 
 // 5. Use a variable to store a number, then write a condition that prints 9 if 
@@ -164,13 +164,13 @@ if (num1 < 10 && num2 < 10) {
 let num = Math.floor(Math.random() * 40) + 1;
 console.log(`The number is ${num}.`);
 if (num < 10) {
-    console.log(9);
+  console.log(9);
 } else if (num < 20) {
-    console.log(19);
+  console.log(19);
 } else if (num < 30) {
-    console.log(29);
+  console.log(29);
 } else {
-    console.log(-1);
+  console.log(-1);
 };
 
 // 9. Use variables to store two numbers, then write a condition that prints 1 
@@ -180,9 +180,9 @@ let num1 = Math.floor(getRandomArbitrary(-10, 10));
 let num2 = Math.floor(getRandomArbitrary(-10, 10));
 console.log(`num1 = ${num1}, num2 = ${num2}`);
 if (num1 < 0 && num2 > 0) {
-    console.log(1);
+  console.log(1);
 } else {
-    console.log(0);
+  console.log(0);
 }
 
 // 10. Use a variable to store a number, then write a condition that prints 5 
@@ -192,15 +192,15 @@ if (num1 < 0 && num2 > 0) {
 let num = Math.floor(getRandomArbitrary(0, 90));
 console.log(`The number is ${num}.`);
 if (num > 80) {
-    console.log(5);
+  console.log(5);
 } else if (num > 60) {
-    console.log(4);
+  console.log(4);
 } else if (num > 40) {
-    console.log(3);
+  console.log(3);
 } else if (num > 20) {
-    console.log(2);
+  console.log(2);
 } else {
-    console.log(1);
+  console.log(1);
 }
 
 
@@ -209,32 +209,32 @@ if (num > 80) {
 // 1. Write a program that stores a customer's age and a movie's time in two 
 // separate variables. Then calculate the price of a movie ticket based on the 
 // following conditions:
-    // If the age is 12 years old or younger, the ticket price is $5.
-    // If the age is between 13 and 59 years old and the movie is before 6 PM, the 
-    //  ticket price is $7. After 6 PM, the ticket price is $10.
-    // If the customer is 60 years old or older, the ticket price is $7.
+  // If the age is 12 years old or younger, the ticket price is $5.
+  // If the age is between 13 and 59 years old and the movie is before 6 PM, the 
+  //  ticket price is $7. After 6 PM, the ticket price is $10.
+  // If the customer is 60 years old or older, the ticket price is $7.
 let age = Math.floor(getRandomArbitrary(4, 70));
 let time = Math.floor(getRandomArbitrary(4, 10));
 let price;
 if (age <= 12) {
-    price = 5
+  price = 5
 } else if ((age > 13 && age < 60 && time < 6) || age > 60) {
-    price = 7
+  price = 7
 } else {
-    price = 10
+  price = 10
 };
 console.log(`Age: ${age}, Time: ${time}, Price: ${price}`)
 
 // 2. Write a program to store the type of book (regular, reference, or special 
 // collection) and the number of days its overdue. Then calculate the fine 
 // amount based on the following conditions:
-    // If the book is a regular book and overdue by up to 7 days, the fine is $1 per day.
-    // If the book is a regular book and overdue by more than 7 days, the fine is 
-    //  $2 per day.
-    // If the book is a reference book, there is no fine, regardless of the number 
-    //  of days overdue.
-    // If the book is a special collection book, the fine is $5 per day, regardless 
-    //  of the number of days overdue.
+  // If the book is a regular book and overdue by up to 7 days, the fine is $1 per day.
+  // If the book is a regular book and overdue by more than 7 days, the fine is 
+  //  $2 per day.
+  // If the book is a reference book, there is no fine, regardless of the number 
+  //  of days overdue.
+  // If the book is a special collection book, the fine is $5 per day, regardless 
+  //  of the number of days overdue.
 const bookTypes = ["regular", "reference", "collection"];
 const random = Math.floor(Math.random() * bookTypes.length);
 let bookType = bookTypes[random];
@@ -244,15 +244,15 @@ let overdueDays = Math.floor(getRandomArbitrary(1, 14));
 let fine;
 
 if (bookType === "regular" && overdueDays <= 7) {
-    fine = overdueDays;
+  fine = overdueDays;
 } else if (bookType === "regular" && overdueDays > 7) {
-    fine = overdueDays * 2;
+  fine = overdueDays * 2;
 } else if (bookType === "reference") {
-    fine = 0;
+  fine = 0;
 } else if (bookType === "collection") {
-    fine = overdueDays * 5;
+  fine = overdueDays * 5;
 } else {
-    console.log("Error with conditions!");
+  console.log("Error with conditions!");
 };
 
 console.log(`Overdue days: ${overdueDays}; Fine: ${fine}`);
@@ -260,11 +260,11 @@ console.log(`Overdue days: ${overdueDays}; Fine: ${fine}`);
 // 3. Write a program that stores a person's order value and membership level 
 // (regular or premium). Then calculate a discount amount based on the following 
 // conditions:
-    // If the total order value is less than $50, there is no discount.
-    // If the total order value is between $50 and $100, the discount is 5% for 
-    //  regular customers and 10% for premium customers.
-    // If the total order value is greater than $100, the discount is 10% for 
-    //  regular customers and 15% for premium customers.
+  // If the total order value is less than $50, there is no discount.
+  // If the total order value is between $50 and $100, the discount is 5% for 
+  //  regular customers and 10% for premium customers.
+  // If the total order value is greater than $100, the discount is 10% for 
+  //  regular customers and 15% for premium customers.
 
 const memberships = ["regular", "premium"];
 const random = Math.floor(Math.random() * memberships.length);
@@ -275,33 +275,33 @@ let orderValue = Math.floor(getRandomArbitrary(25, 125));
 let discount;
 
 if (orderValue < 50) {
-    discount = 0;
+  discount = 0;
 } else if (orderValue >= 50 && orderValue <= 100) {
-    if (membership === "regular") {
-        discount = 0.05;
-    } else if (membership === "premium") {
-        discount = 0.1;
-    };
+  if (membership === "regular") {
+    discount = 0.05;
+  } else if (membership === "premium") {
+    discount = 0.1;
+  };
 } else if (orderValue > 100) {
-    if (membership === "regular") {
-        discount = 0.1;
-    } else if (membership === "premium") {
-        discount = 0.15;
-    };
+  if (membership === "regular") {
+    discount = 0.1;
+  } else if (membership === "premium") {
+    discount = 0.15;
+  };
 } else {
-    console.log("Error with conditions!");
+  console.log("Error with conditions!");
 };
 console.log(`Order Value: ${orderValue}; Discount: ${discount}`);
 
 // 4. Write a program that stores the weight of a package and the destination 
 // (domestic or international). Then calculate the shipping fee based on the 
 // following conditions:
-    // If the destination is domestic:
-    // If the weight is less than or equal to 1 kg, the shipping fee is $5.
-    // If the weight is greater than 1 kg, the shipping fee is $10.
-    // If the destination is an international shipment:
-    // If the weight is less than or equal to 1 kg, the shipping fee is $15.
-    // If the weight is greater than 1 kg, the shipping fee is $25.
+  // If the destination is domestic:
+  // If the weight is less than or equal to 1 kg, the shipping fee is $5.
+  // If the weight is greater than 1 kg, the shipping fee is $10.
+  // If the destination is an international shipment:
+  // If the weight is less than or equal to 1 kg, the shipping fee is $15.
+  // If the weight is greater than 1 kg, the shipping fee is $25.
 const destinations = ["domestic", "international"];
 const random = Math.floor(Math.random() * destinations.length);
 let destination = destinations[random];
@@ -310,17 +310,17 @@ let weight = getRandomArbitrary(0.1, 2);
 let shipping;
 
 if (destination === "domestic") {
-    if (weight <= 1) {
-        shipping = 5;
-    } else {
-        shipping = 10;
-    };
+  if (weight <= 1) {
+    shipping = 5;
+  } else {
+    shipping = 10;
+  };
 } else if (destination === "international") {
-    if (weight <= 1) {
-        shipping = 15;
-    } else {
-        shipping = 25;
-    };
+  if (weight <= 1) {
+    shipping = 15;
+  } else {
+    shipping = 25;
+  };
 };
 console.log(`Destination: ${destination}; Weight: ${weight}; Shipping: ${shipping}`)
 
@@ -329,43 +329,43 @@ console.log(`Destination: ${destination}; Weight: ${weight}; Shipping: ${shippin
 
 // 1. Write a while loop to print the numbers 1 through 10.
 for (let num = 1; num <= 10; num++) {
-    console.log(num)
+  console.log(num)
 }
 
 // 2. Write a while loop that prints the word "hello" 5 times.
 let i = 0;
 do {
-    console.log("hello");
-    i++;
+  console.log("hello");
+  i++;
 } while (i < 5);
 
 // 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 
 // each time.
 let i = 0;
 while (i < 100) {
-    console.log(i);
-    i = i + 5;
+  console.log(i);
+  i = i + 5;
 };
 
 // 5. Write a while loop that prints the number 9000 ten times.
 let i = 0;
 while (i < 10) {
-    console.log(9000);
-    i++;
+  console.log(9000);
+  i++;
 };
 
 // 6. Write a while loop that asks the user to enter a number and will run 
 // forever until the user enters a number greater than 10.
 let num;
 while (num != 10) {
-    num = prompt("Enter a number:");
+  num = prompt("Enter a number:");
 };
 
 // 10. Write a while loop that prints the even numbers from 2 to 40.
 let i = 2;
 while (i < 40) {
-    console.log(i)
-    i = i + 2;
+  console.log(i)
+  i = i + 2;
 };
 
 
@@ -377,7 +377,7 @@ while (i < 40) {
 let array = [1, 2, 3];
 let new_array = [];
 for (index in array) {
-    new_array.push(array[index] * 3);
+  new_array.push(array[index] * 3);
 };
 console.log(new_array);
 
@@ -385,7 +385,7 @@ console.log(new_array);
 let array = [1, 2, 3];
 let new_array = [];
 array.forEach(function (number) {
-    new_array.push(number * 3);
+  new_array.push(number * 3);
 });
 console.log(new_array);
 
@@ -400,7 +400,7 @@ console.log(new_array);
 let array = ["hello", "goodbye"];
 let new_array = [];
 for (index in array) {
-    new_array.push(array[index].toUpperCase());
+  new_array.push(array[index].toUpperCase());
 };
 console.log(new_array);
 
@@ -408,7 +408,7 @@ console.log(new_array);
 let array = ["hello", "goodbye"];
 let new_array = [];
 for (let i = 0; i < array.length; i++) {
-    new_array.push(array[i].toUpperCase());
+  new_array.push(array[i].toUpperCase());
 };
 console.log(new_array);
 
@@ -416,7 +416,7 @@ console.log(new_array);
 let array = ["hello", "goodbye"];
 let new_array = [];
 array.forEach((item) => {
-    new_array.push(item.toUpperCase());
+  new_array.push(item.toUpperCase());
 });
 console.log(new_array);
 
@@ -425,15 +425,15 @@ console.log(new_array);
 // For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes 
 // ["Alice", "Blane"].
 let array = [
-    {"name": "Alice", "age": 27},
-    {"name": "Blane", "age": 16}
+  {"name": "Alice", "age": 27},
+  {"name": "Blane", "age": 16}
 ];
 console.log(array[0]["name"]);
 console.log(array[1]["name"]);
 
 let new_array = [];
 array.forEach((object) => {
-    new_array.push(object.name);
+  new_array.push(object.name);
 });
 console.log(new_array);
 
@@ -443,7 +443,7 @@ console.log(new_array);
 let array = [1, 2, 3];
 let new_array = [];
 array.forEach((item) => {
-    new_array.push(item + 7);
+  new_array.push(item + 7);
 });
 console.log(new_array);
 
@@ -453,7 +453,7 @@ console.log(new_array);
 let array = ["hello", "goodbye"];
 let lengths = [];
 array.forEach((item) => {
-    lengths.push(item.length);
+  lengths.push(item.length);
 })
 console.log(lengths);
 
@@ -464,6 +464,16 @@ console.log(lengths);
 let people = [{name: "Alice", age: 27}, {name: "Blane", age: 16}];
 let ages = [];
 people.forEach((item) => {
-    ages.push(item.age);
+  ages.push(item.age);
 });
 console.log(ages);
+
+// 7. Start with an array of numbers and create a new array with each number 
+// divided by 2.
+// For example, [1, 2, 3] becomes [0.5, 1.0, 1.5].
+let numbers = [1, 2, 3];
+let halved = [];
+numbers.forEach((number) => {
+  halved.push(parseFloat(number) / 2);
+});
+console.log(halved);
