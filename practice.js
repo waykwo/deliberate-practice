@@ -389,7 +389,7 @@ array.forEach(function (number) {
 });
 console.log(new_array);
 
-// Copilot explaisn:
+// Copilot explains:
 // Using for...in to iterate over arrays is generally not recommended because 
 // it iterates over all enumerable properties, which can lead to unexpected 
 // behavior if the array is extended with additional properties. The forEach 
@@ -474,6 +474,18 @@ console.log(ages);
 let numbers = [1, 2, 3];
 let halved = [];
 numbers.forEach((number) => {
-  halved.push(parseFloat(number) / 2);
+  halved.push(number / 2);
 });
 console.log(halved);
+
+// 8. Start with an array of strings and create a new array with each string's 
+// first letter only.
+// For example, ["hello", "goodbye"] becomes ["h", "g"].
+let strings = ["hello", "goodbye"];
+let firsts = [];
+// console.log(strings[0][0]);
+strings.forEach((string) => {
+  firsts.push(string[0]);
+});
+console.log(firsts)
+

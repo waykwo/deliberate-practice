@@ -1,6 +1,7 @@
-let numbers = [1, 2, 3];
-let halved = [];
-numbers.forEach((number) => {
-  halved.push(parseFloat(number) / 2);
+let strings = ["hello", "goodbye"];
+let firsts = [];
+console.log(strings[0][0]);
+strings.forEach((string) => {
+  firsts.push(string[0]);
 });
-console.log(halved);
+console.log(firsts)
