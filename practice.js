@@ -388,3 +388,35 @@ array.forEach(function (number) {
     new_array.push(number * 3);
 });
 console.log(new_array);
+
+// Copilot explaisn:
+// Using for...in to iterate over arrays is generally not recommended because 
+// it iterates over all enumerable properties, which can lead to unexpected 
+// behavior if the array is extended with additional properties. The forEach 
+// method is more appropriate for array iteration.
+
+// 2. Start with an array of strings and create a new array with each string upcased.
+// For example, ["hello", "goodbye"] becomes ["HELLO", "GOODBYE"].
+let array = ["hello", "goodbye"];
+let new_array = [];
+for (index in array) {
+    new_array.push(array[index].toUpperCase());
+};
+console.log(new_array);
+
+// Alt
+let array = ["hello", "goodbye"];
+let new_array = [];
+for (let i = 0; i < array.length; i++) {
+    new_array.push(array[i].toUpperCase());
+};
+console.log(new_array);
+
+// Alt
+let array = ["hello", "goodbye"];
+let new_array = [];
+array.forEach((item) => {
+    new_array.push(item.toUpperCase());
+});
+console.log(new_array);
+
