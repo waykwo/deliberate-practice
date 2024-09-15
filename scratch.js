@@ -1,7 +1,7 @@
 let array = ["winner", "winner", "chicken", "dinner"];
 let startsWithW = [];
 array.forEach((string) => {
-  if (string[0] == "w") {
+  if (string.startsWith("w")) {
     startsWithW.push(string);
   };
 });
