@@ -1,8 +1,8 @@
-let numbers = [2, 4, 5, 1, 8, 9, 7];
-let even = [];
-numbers.forEach((number) => {
-  if (number % 2 == 0) {
-    even.push(number);
+let strings = ["a", "man", "a", "plan", "a", "canal", "panama"];
+let shortStrings = [];
+strings.forEach((string) => {
+  if (string.length < 4) {
+    shortStrings.push(string);
   };
 });
-console.log(even)
+console.log(shortStrings);
