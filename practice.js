@@ -728,3 +728,15 @@ console.log(min);
 let array = [5, 10, 8, 3, 9];
 console.log(Math.min(...array));
 
+// 5. Start with an array of strings and compute the total length of all the 
+// strings.
+// For example, ["volleyball", "basketball", "badminton"] becomes 29.
+let sports = ["volleyball", "basketball", "badminton"];
+// console.log(sports[0].length);
+// console.log(sports[1].length);
+// console.log(sports[2].length);
+let length = 0;
+sports.forEach((sport) => {
+  length += sport.length;
+});
+console.log(length);
