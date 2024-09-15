@@ -1,8 +1,3 @@
-let numbers = [5, 10, 8, 3];
-let max = numbers[0];
-numbers.forEach((number) => {
-  if (number > max) {
-    max = number;
-  };
-});
-console.log(max);
+let array = [[1, 3], [8, 9], [2, 16]];
+let flattened = array.flat();
+console.log(flattened);
