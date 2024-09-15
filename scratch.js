@@ -1,12 +1,8 @@
-let items = [
-  {name: "chair", price: 100},
-  {name: "pencil", price: 1},
-  {name: "book", price: 4}
-];
-let pricesOverFive = [];
-items.forEach((item) => {
-  if (item.price > 5) {
-    pricesOverFive.push(item);
+let numbers = [2, 4, 5, 1, 8, 9, 7];
+let even = [];
+numbers.forEach((number) => {
+  if (number % 2 == 0) {
+    even.push(number);
   };
 });
-console.log(pricesOverFive);
+console.log(even)

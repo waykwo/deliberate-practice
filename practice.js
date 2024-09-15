@@ -564,3 +564,15 @@ items.forEach((item) => {
   };
 });
 console.log(pricesOverFive);
+
+// 4. Start with an array of numbers and create a new array with only the 
+// even numbers.
+// For example, [2, 4, 5, 1, 8, 9, 7] becomes [2, 4, 8].
+let numbers = [2, 4, 5, 1, 8, 9, 7];
+let even = [];
+numbers.forEach((number) => {
+  if (number % 2 === 0) {
+    even.push(number);
+  };
+});
+console.log(even)
