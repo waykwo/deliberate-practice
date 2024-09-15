@@ -803,4 +803,13 @@ items.forEach((item) => {
 });
 console.log(shortestNameItem);
 
-// 10. 
+// 10. Start with an array of numbers and compute the maximum number.
+// For example, [5, 10, 8, 3] becomes 10.
+let numbers = [5, 10, 8, 3];
+let max = numbers[0];
+numbers.forEach((number) => {
+  if (number > max) {
+    max = number;
+  };
+});
+console.log(max);

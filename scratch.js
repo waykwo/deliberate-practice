@@ -1,12 +1,8 @@
-let items = [
-  {name: "chair", price: 100},
-  {name: "pencil", price: 1}, 
-  {name: "book", price: 4}
-];
-let shortestNameItem = items[0];
-items.forEach((item) => {
-  if (item.name.length < shortestNameItem.name.length) {
-    shortestNameItem = item;
+let numbers = [5, 10, 8, 3];
+let max = numbers[0];
+numbers.forEach((number) => {
+  if (number > max) {
+    max = number;
   };
 });
-console.log(shortestNameItem);
+console.log(max);
