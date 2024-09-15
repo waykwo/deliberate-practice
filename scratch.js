@@ -1,10 +1,2 @@
-let items = [
-  {name: "chair", price: 100},
-  {name: "pencil", price: 1}, 
-  {name: "book", price: 4}
-];
-let sum = 0;
-items.forEach((item) => {
-  sum += item.price;
-});
-console.log(sum);
+let array = [5, 10, 8, 3, 9];
+console.log(Math.min(...array));

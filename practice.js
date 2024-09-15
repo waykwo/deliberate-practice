@@ -712,3 +712,19 @@ items.forEach((item) => {
   sum += item.price;
 });
 console.log(sum);
+
+// 4. Start with an array of numbers and compute the the minimum number.
+// For example, [5, 10, 8, 3, 9] becomes 3.
+let array = [5, 10, 8, 3, 9];
+let min = array[0];
+array.forEach((number) => {
+  if (number < min) {
+    min = number;
+  };
+});
+console.log(min);
+
+// Alt
+let array = [5, 10, 8, 3, 9];
+console.log(Math.min(...array));
+
