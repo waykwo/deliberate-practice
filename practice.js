@@ -420,3 +420,19 @@ array.forEach((item) => {
 });
 console.log(new_array);
 
+// 3. Start with an array of hashes and create a new array of string values 
+// from each hash's :name key.
+// For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] becomes 
+// ["Alice", "Blane"].
+array = [
+    {"name": "Alice", "age": 27},
+    {"name": "Blane", "age": 16}
+];
+console.log(array[0]["name"]);
+console.log(array[1]["name"]);
+
+new_array = [];
+array.forEach((object) => {
+    new_array.push(object.name);
+});
+console.log(new_array);
