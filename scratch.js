@@ -1,9 +1,12 @@
-let sports = ["volleyball", "basketball", "badminton"];
-// console.log(sports[0].length);
-// console.log(sports[1].length);
-// console.log(sports[2].length);
-let length = 0;
-sports.forEach((sport) => {
-  length += sport.length;
+let items = [
+  {name: "chair", price: 100},
+  {name: "pencil", price: 1}, 
+  {name: "book", price: 4}
+];
+let lowestPricedItem = items[0];
+items.forEach((item) => {
+  if (item.price < lowestPricedItem.price) {
+    lowestPricedItem = item;
+  };
 });
-console.log(length);
+console.log(lowestPricedItem);
