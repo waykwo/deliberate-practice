@@ -757,3 +757,12 @@ items.forEach((item) => {
   };
 });
 console.log(lowestPricedItem);
+
+// 7. Start with an array of numbers and compute product of all the numbers.
+// For example, [5, 10, 8, 3] becomes 1200.
+let numbers = [5, 10, 8, 3];
+let product = 1;
+numbers.forEach((number) => {
+  product *= number;
+});
+console.log(product);

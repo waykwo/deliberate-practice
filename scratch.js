@@ -1,12 +1,6 @@
-let items = [
-  {name: "chair", price: 100},
-  {name: "pencil", price: 1}, 
-  {name: "book", price: 4}
-];
-let lowestPricedItem = items[0];
-items.forEach((item) => {
-  if (item.price < lowestPricedItem.price) {
-    lowestPricedItem = item;
-  };
+let numbers = [5, 10, 8, 3];
+let product = 1;
+numbers.forEach((number) => {
+  product *= number;
 });
-console.log(lowestPricedItem);
+console.log(product);
