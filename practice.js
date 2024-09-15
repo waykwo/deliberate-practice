@@ -360,3 +360,31 @@ let num;
 while (num != 10) {
     num = prompt("Enter a number:");
 };
+
+// 10. Write a while loop that prints the even numbers from 2 to 40.
+let i = 2;
+while (i < 40) {
+    console.log(i)
+    i = i + 2;
+};
+
+
+// 03-loops2.md
+
+// 1. Start with an array of numbers and create a new array with each number 
+// times 3.
+// For example, [1, 2, 3] becomes [3, 6, 9].
+let array = [1, 2, 3];
+let new_array = [];
+for (index in array) {
+    new_array.push(array[index] * 3);
+};
+console.log(new_array);
+
+// Alt
+let array = [1, 2, 3];
+let new_array = [];
+array.forEach(function (number) {
+    new_array.push(number * 3);
+});
+console.log(new_array);
