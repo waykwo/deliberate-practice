@@ -620,3 +620,14 @@ numbers.forEach((number) => {
 });
 console.log(twentyThreeOrHigher);
 
+// 8. Start with an array of strings and create a new array with only the 
+// strings that don't start with the letter "b".
+// For example, ["big", "little", "good", "bad"] becomes ["little", "good"].
+let strings = ["big", "little", "good", "bad"];
+let notStartWithB = [];
+strings.forEach((string) => {
+  if (!string.startsWith("b")) {
+    notStartWithB.push(string);
+  };
+});
+console.log(notStartWithB);
