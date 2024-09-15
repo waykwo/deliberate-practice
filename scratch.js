@@ -5,7 +5,7 @@ let items = [
 ];
 let shortestNameItem = items[0];
 items.forEach((item) => {
-  if (item.name < shortestNameItem.name) {
+  if (item.name.length < shortestNameItem.name.length) {
     shortestNameItem = item;
   };
 });
