@@ -446,3 +446,13 @@ array.forEach((item) => {
     new_array.push(item + 7);
 });
 console.log(new_array);
+
+// 5. Start with an array of strings and create a new array with each string's 
+// length.
+// For example, ["hello", "goodbye"] becomes [5, 7].
+array = ["hello", "goodbye"];
+lengths = [];
+array.forEach((item) => {
+    lengths.push(item.length);
+})
+console.log(lengths);
