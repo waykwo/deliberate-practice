@@ -687,3 +687,13 @@ let sum = numbers.reduce((sum, number) => {
   return sum + number;
 }, 0);
 console.log(sum);
+
+// 2. Start with an array of strings and combine them all into a single string.
+// For example, ["volleyball", "basketball", "badminton"] 
+// becomes "volleyballbasketballbadminton".
+let sports = ["volleyball", "basketball", "badminton"];
+let sportsString = ""
+sports.forEach((sport) => {
+  sportsString += sport;
+});
+console.log(sportsString);
