@@ -489,3 +489,13 @@ strings.forEach((string) => {
 });
 console.log(firsts)
 
+// 9. Start with an array of hashes and create a new array of number values 
+// from each hash's :age key times 2.
+// For example, [{name: "Alice", age: 27}, {name: "Blane", age: 16}] 
+// becomes [54, 32].
+let people = [{name: "Alice", age: 27}, {name: "Blane", age: 16}];
+let agesTimesTwo = [];
+people.forEach((person) => {
+  agesTimesTwo.push(person.age * 2);
+});
+console.log(agesTimesTwo);

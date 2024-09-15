@@ -1,7 +1,6 @@
-let strings = ["hello", "goodbye"];
-let firsts = [];
-console.log(strings[0][0]);
-strings.forEach((string) => {
-  firsts.push(string[0]);
+let people = [{name: "Alice", age: 27}, {name: "Blane", age: 16}];
+let agesTimesTwo = [];
+people.forEach((person) => {
+  agesTimesTwo.push(person.age * 2);
 });
-console.log(firsts)
+console.log(agesTimesTwo);
