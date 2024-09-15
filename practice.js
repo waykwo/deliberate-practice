@@ -436,3 +436,13 @@ array.forEach((object) => {
     new_array.push(object.name);
 });
 console.log(new_array);
+
+// 4. Start with an array of numbers and create a new array with each number 
+// plus 7.
+// For example, [1, 2, 3] becomes [8, 9, 10].
+array = [1, 2, 3];
+new_array = [];
+array.forEach((item) => {
+    new_array.push(item + 7);
+});
+console.log(new_array);
