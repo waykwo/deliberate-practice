@@ -1,8 +1,5 @@
-let numbers = [2, 4, 5, 1, 8, 9, 7];
-let oddNumbers = [];
-numbers.forEach((number) => {
-  if (number % 2 !== 0) {
-    oddNumbers.push(number);
-  };
-});
-console.log(oddNumbers);
+let numbers = [5, 10, 8, 3];
+let sum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+console.log(sum);

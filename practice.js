@@ -661,3 +661,22 @@ numbers.forEach((number) => {
   };
 });
 console.log(oddNumbers);
+
+
+// 03-loops4.md
+
+// 1. Start with an array of numbers and compute the sum of all the numbers.
+// For example, [5, 10, 8, 3] becomes 26.
+let numbers = [5, 10, 8, 3];
+let sum = 0;
+numbers.forEach((number) => {
+  sum += number;
+});
+console.log(sum);
+
+// Alt
+let numbers = [5, 10, 8, 3];
+let sum = numbers.reduce((accumulator, currentValue) => {
+  return accumulator + currentValue;
+}, 0);
+console.log(sum);
