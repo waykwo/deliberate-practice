@@ -331,3 +331,18 @@ console.log(`Destination: ${destination}; Weight: ${weight}; Shipping: ${shippin
 for (let num = 1; num <= 10; num++) {
     console.log(num)
 }
+
+// 2. Write a while loop that prints the word "hello" 5 times.
+let i = 0;
+do {
+    console.log("hello");
+    i++;
+} while (i < 5);
+
+// 4. Write a while loop that prints the numbers 0 through 100, increasing by 5 
+// each time.
+let i = 0;
+while (i < 100) {
+    console.log(i)
+    i = i + 5
+}
