@@ -766,3 +766,22 @@ numbers.forEach((number) => {
   product *= number;
 });
 console.log(product);
+
+// 8. Start with an array of strings and combine them all into a single string, 
+// separated by dashes.
+// For example, ["volleyball", "basketball", "badminton"] 
+// becomes "-volleyball-basketball-badminton-".
+let sports = ["volleyball", "basketball", "badminton"];
+let string = "-";
+sports.forEach((sport) => {
+  string = string.concat(sport, "-");
+});
+console.log(string);
+
+// Alt
+let sports = ["volleyball", "basketball", "badminton"];
+let string = "-";
+sports.forEach((sport) => {
+  string += sport + "-";
+});
+console.log(string);

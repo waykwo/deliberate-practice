@@ -1,6 +1,6 @@
-let numbers = [5, 10, 8, 3];
-let product = 1;
-numbers.forEach((number) => {
-  product *= number;
+let sports = ["volleyball", "basketball", "badminton"];
+let string = "-";
+sports.forEach((sport) => {
+  string += sport + "-";
 });
-console.log(product);
+console.log(string);
