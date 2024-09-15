@@ -8,3 +8,7 @@
 // 8) Write a function that takes in an array of numbers and returns a count of how many zeros are in the array.
 // 9) Write a function that takes in an array of numbers and returns true if all the numbers are bigger than 10, otherwise returns false.
 // 10) Write a function that takes in an array of words and returns the number of times the letter “a” appeared in total.
+
+// Write a function that accepts a string and returns whether it’s a palindrome.
+// Write a function to generate/print/store the first “n” prime numbers.
+// Given a tic-tac-toe board (matrix of 3 x 3), write a function that can check to see whether X or O won.
