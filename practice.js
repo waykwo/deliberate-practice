@@ -858,9 +858,41 @@ let array = ["a", "b", "c", "d"];
 let combined = [];
 array.forEach((letter1) => {
   array.forEach((letter2) => {
-    if (letter1 != letter2) {
+    if (letter1 !== letter2) {
       combined.push(letter1 + letter2);
     };
   });
 });
 console.log(combined);
+
+// 4. Use a nested loop to find the largest product of any two different numbers 
+// within a given array.
+// For example, [5, -2, 1, -9, -7, 2, 6] becomes 63.
+let array = [5, -2, 1, -9, -7, 2, 6];
+let products = [];
+array.forEach((number1) => {
+  array.forEach((number2) => {
+    if (number1 !== number2) {
+      product = number1 * number2;
+      products.push(product);
+    };
+  });
+});
+// console.log(products);
+console.log(Math.max(...products));
+
+// Alt
+let array = [5, -2, 1, -9, -7, 2, 6];
+let largestProduct = array[0] * array[1];
+let newProduct;
+array.forEach((number1) => {
+  array.forEach((number2) => {
+    if (number1 !== number2) {
+      newProduct = number1 * number2;
+      if (newProduct > largestProduct) {
+        largestProduct = newProduct;
+      }
+    };
+  });
+});
+console.log(largestProduct);
