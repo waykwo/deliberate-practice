@@ -896,3 +896,13 @@ array.forEach((number1) => {
   });
 });
 console.log(largestProduct);
+
+// 5. Use a nested loop to compute the sum of all the numbers in an array of 
+// number pairs.
+// For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
+let array = [[1, 3], [8, 9], [2, 16]];
+sum = 0;
+array.forEach((pair) => {
+  sum += pair[0] + pair[1];
+});
+console.log(sum);
