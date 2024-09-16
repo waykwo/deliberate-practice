@@ -849,3 +849,18 @@ foo.forEach((x) => {
   });
 });
 console.log(combined);
+
+// 3. Use a nested loop with one array of strings to create a new array that 
+// contains every combination of each string with every other string in the array.
+// For example, ["a", "b", "c", "d"] 
+// becomes ["ab", "ac", "ad", "ba", "bc", "bd", "ca", "cb", "cd", "da", "db", "dc"].
+let array = ["a", "b", "c", "d"];
+let combined = [];
+array.forEach((letter1) => {
+  array.forEach((letter2) => {
+    if (letter1 != letter2) {
+      combined.push(letter1 + letter2);
+    };
+  });
+});
+console.log(combined);

@@ -1,9 +1,10 @@
-let foo = ["a", "b", "c"];
-let bar = ["d", "e", "f", "g"];
+let array = ["a", "b", "c", "d"];
 let combined = [];
-foo.forEach((x) => {
-  bar.forEach((y) => {
-    combined.push(x + y);
+array.forEach((letter1) => {
+  array.forEach((letter2) => {
+    if (letter1 != letter2) {
+      combined.push(letter1 + letter2);
+    };
   });
 });
 console.log(combined);
