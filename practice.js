@@ -901,8 +901,23 @@ console.log(largestProduct);
 // number pairs.
 // For example, [[1, 3], [8, 9], [2, 16]] becomes 39.
 let array = [[1, 3], [8, 9], [2, 16]];
-sum = 0;
+let sum = 0;
 array.forEach((pair) => {
   sum += pair[0] + pair[1];
 });
 console.log(sum);
+
+// 6. Use a nested loop with two arrays of numbers to create a new array of the 
+// sums of each combination of numbers.
+// For example, [1, 2] and [6, 7, 8] becomes [7, 8, 9, 8, 9, 10].
+let array1 = [1, 2];
+let array2 = [6, 7, 8];
+let newArray = [];
+array1.forEach(num1 => {
+  array2.forEach(num2 => {
+    if (num1 !== num2) {
+      newArray.push(num1 + num2);
+    };
+  });
+});
+console.log(newArray);

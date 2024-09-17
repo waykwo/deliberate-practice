@@ -1,6 +1,11 @@
-let array = [[1, 3], [8, 9], [2, 16]];
-sum = 0;
-array.forEach((pair) => {
-  sum += pair[0] + pair[1];
+let array1 = [1, 2];
+let array2 = [6, 7, 8];
+let newArray = [];
+array1.forEach(num1 => {
+  array2.forEach(num2 => {
+    if (num1 !== num2) {
+      newArray.push(num1 + num2);
+    };
+  });
 });
-console.log(sum);
+console.log(newArray);
