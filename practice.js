@@ -831,7 +831,7 @@ array.forEach((pair) => {
 });
 console.log(flattened);
 
-// Atl
+// Alt
 let array = [[1, 3], [8, 9], [2, 16]];
 let flattened = array.flat();
 console.log(flattened);
@@ -921,3 +921,16 @@ array1.forEach(num1 => {
   });
 });
 console.log(newArray);
+
+// 7. Use a nested loop with an array of numbers to compute an array with every 
+// combination of products from each number.
+// For example, [2, 8, 3] becomes [4, 16, 6, 16, 64, 24, 6, 24, 9].
+let array = [2, 8, 3];
+products = [];
+array.forEach(num1 => {
+  // console.log(Array.from(array));
+  Array.from(array).forEach(num2 => {
+    products.push(num1 * num2);
+  });
+});
+console.log(products);
