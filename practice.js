@@ -934,3 +934,17 @@ array.forEach(num1 => {
   });
 });
 console.log(products);
+
+// 8. Use a nested loop to find the largest sum of any two different numbers 
+// within an array.
+// For example, [1, 8, 3, 10] becomes 18.
+let array = [1, 8, 3, 10];
+let sums = [];
+array.forEach(num1 => {
+  Array.from(array).forEach(num2 => {
+    if (num1 !== num2) {
+      sums.push(num1 + num2);
+    };
+  });
+});
+console.log(Math.max(...sums));

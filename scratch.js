@@ -1,9 +1,16 @@
-let array = [2, 8, 3];
-products = [];
+let array = [1, 8, 3, 10];
+let sums = [];
 array.forEach(num1 => {
-  // console.log(Array.from(array));
   Array.from(array).forEach(num2 => {
-    products.push(num1 * num2);
+    if (num1 !== num2) {
+      sums.push(num1 + num2);
+    };
   });
 });
-console.log(products)
+console.log(Math.max(...sums));
+
+
+// let array = [1, 8, 3, 10];
+// // console.log(Math.max(array));
+// let largest = Math.max(array);
+// console.log(largest)
