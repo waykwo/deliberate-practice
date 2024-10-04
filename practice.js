@@ -964,3 +964,34 @@ array.forEach(num1 => {
 });
 addends = addends.slice(0, 2);
 console.log(addends);
+
+// 10. Use a nested loop to convert an array of string arrays into a single string.
+// For example, [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]] 
+// becomes "amanaplanacanalpanama".
+// let stringsAray = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]];
+// let newArray = [];
+// // let newString;
+// // console.log(stringsAray.join(""));
+// stringsAray.forEach(sub => {
+//   sub.forEach(string => {
+//     newArray.push(string);
+//   })
+// })
+// console.log(newArray);
+
+// let stringsAray = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]];
+// let newString;
+// stringsAray.forEach(sub => {
+//   sub.forEach(string => {
+//     newString = newString.concat(string);
+//   })
+// })
+// console.log(newString);
+let stringsAray = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]];
+let newString = "";
+stringsAray.forEach(sub => {
+  sub.forEach(string => {
+    newString += string;
+  });
+});
+console.log(newString);
