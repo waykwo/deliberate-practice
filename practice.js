@@ -1010,3 +1010,12 @@ console.log(words);
 let array = ["h", "w", "s", "j"];
 array[1] = 9;
 console.log(array);
+
+// 3. Create an array to store 5 numbers. Then print out each number on separate 
+// lines with a while loop.
+let numbers = [3, 1, 7, 2, 8];
+let i = 0;
+while (i < numbers.length) {
+  console.log(numbers[i]);
+  i++;
+}
