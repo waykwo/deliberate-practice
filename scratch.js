@@ -1,3 +1,3 @@
-let words = ["amortization", "jelly", "basics"];
-words.push("definition", "mechanical");
-console.log(words);
+let array = ["h", "w", "s", "j"];
+array[1] = 9;
+console.log(array);

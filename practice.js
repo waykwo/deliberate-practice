@@ -1004,3 +1004,9 @@ console.log(newString);
 let words = ["amortization", "jelly", "basics"];
 words.push("definition", "mechanical");
 console.log(words);
+
+// 2. Create an array to store 4 letters. Then change the second letter to a 
+// number and print the array on one line.
+let array = ["h", "w", "s", "j"];
+array[1] = 9;
+console.log(array);
