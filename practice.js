@@ -1034,3 +1034,9 @@ while (i < names.length) {
   console.log(names[i]);
   i++;
 }
+
+// 7. Create an array to store 5 numbers. Then change the first number to 10 
+// times its original value and print the array on one line.
+let numbers = [3, 1, 7, 2, 8];
+numbers[0] *= 10;
+console.log(numbers);
