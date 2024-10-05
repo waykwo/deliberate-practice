@@ -995,3 +995,12 @@ stringsAray.forEach(sub => {
   });
 });
 console.log(newString);
+
+
+// exercises/04-arrays-hashes1.md
+
+// 1. Create an array to store 3 words. Then add two more words to the array 
+// and print the array on one line.
+let words = ["amortization", "jelly", "basics"];
+words.push("definition", "mechanical");
+console.log(words);

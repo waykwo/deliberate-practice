@@ -1,8 +1,3 @@
-let stringsAray = [["a", "man"], ["a", "plan"], ["a", "canal"], ["panama"]];
-let newString = "";
-stringsAray.forEach(sub => {
-  sub.forEach(string => {
-    newString += string;
-  });
-});
-console.log(newString);
+let words = ["amortization", "jelly", "basics"];
+words.push("definition", "mechanical");
+console.log(words);
