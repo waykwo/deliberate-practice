@@ -1025,3 +1025,12 @@ while (i < numbers.length) {
 let strings = ["rope", "remember", "while"];
 strings[2] = strings[2].toUpperCase();
 console.log(strings);
+
+// 6. Create an array to store 3 names. Then print out each name on separate 
+// lines with a while loop.
+let names = ["karen", "michel", "marie-josee"];
+let i = 0;
+while (i < names.length) {
+  console.log(names[i]);
+  i++;
+}
