@@ -1019,3 +1019,9 @@ while (i < numbers.length) {
   console.log(numbers[i]);
   i++;
 }
+
+// 5. Create an array to store 3 strings with lower case letters. Then change 
+// the third string to have all capital letters and print the array on one line.
+let strings = ["rope", "remember", "while"];
+strings[2] = strings[2].toUpperCase();
+console.log(strings);
