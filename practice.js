@@ -1035,8 +1035,23 @@ while (i < names.length) {
   i++;
 }
 
-// 7. Create an array to store 5 numbers. Then change the first number to 10 
+// 8. Create an array to store 5 numbers. Then change the first number to 10 
 // times its original value and print the array on one line.
 let numbers = [3, 1, 7, 2, 8];
 numbers[0] *= 10;
 console.log(numbers);
+
+
+// exercises/04-arrays-hashes2.md
+
+// 1. Make a hash to store a person's first name, last name, and email address. 
+// Then print each attribute on separate lines.
+let people = {
+  "first name": "Charlie",
+  "last name": "Brown",
+  "email address": "cbrown@peanuts.comic"
+};
+console.log(people["first name"]);
+console.log(people["last name"]);
+console.log(people["email address"]);
+

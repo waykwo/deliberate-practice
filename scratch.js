@@ -1,3 +1,8 @@
-let numbers = [3, 1, 7, 2, 8];
-numbers[0] *= 10;
-console.log(numbers);
+let people = {
+  "first name": "Charlie",
+  "last name": "Brown",
+  "email address": "cbrown@peanuts.comic"
+};
+console.log(people["first name"]);
+console.log(people["last name"]);
+console.log(people["email address"]);
