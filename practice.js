@@ -1055,3 +1055,12 @@ console.log(people["first name"]);
 console.log(people["last name"]);
 console.log(people["email address"]);
 
+// 2. Make an array of hashes to store the first name and last name for 3 
+// different people. Then print out the first person's info.
+let people = [
+  {"first name": "Charlie", "last name": "Brown"},
+  {"first name": "Linus", "last name": "Van Pelt"},
+  {"first name": "Snoopy", "last name": "Brown"}
+];
+console.log(people[0]["first name"]);
+console.log(people[0]["last name"]);
