@@ -1,7 +1,7 @@
-let people = [
-  {"first name": "Charlie", "last name": "Brown"},
-  {"first name": "Linus", "last name": "Van Pelt"},
-  {"first name": "Snoopy", "last name": "Brown"}
-];
-console.log(people[0]["first name"]);
-console.log(people[0]["last name"]);
+let menu = {
+  "espresso": 3.5,
+  "drip": 4,
+  "latte": 5
+};
+menu["sandwich"] = 6;
+console.log(menu);

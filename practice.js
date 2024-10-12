@@ -1064,3 +1064,13 @@ let people = [
 ];
 console.log(people[0]["first name"]);
 console.log(people[0]["last name"]);
+
+// 3. Make a hash to store prices for 3 different menu items. Then add a new 
+// menu item and price and print the hash to see the result.
+let menu = {
+  "espresso": 3.5,
+  "drip": 4,
+  "latte": 5
+};
+menu["sandwich"] = 6;
+console.log(menu);
