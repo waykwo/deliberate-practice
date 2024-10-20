@@ -1087,3 +1087,27 @@ console.log(book.title);
 console.log(book.author);
 console.log(book.pages);
 console.log(book.language);
+
+// 5. Make an array of hashes to store the title and author for 3 different 
+// books. Then print out the third book's author.
+let books = [
+  {
+    "title": "Moby Dick",
+    "author": "Hermann Melville",
+    "pages": 545,
+    "language": "English"
+  },
+  {
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "pages": 277,
+    "language": "English"
+  },
+  {
+    "title": "The Cat in the Hat",
+    "author": "Theodor Seuss Geisel",
+    "pages": 36,
+    "language": "English"
+  }
+];
+console.log(books[2].author);
