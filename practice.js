@@ -1111,3 +1111,13 @@ let books = [
   }
 ];
 console.log(books[2].author);
+
+// 6. Make a hash to store 3 different states and their capitals. Then add a 
+// new state and capital and print the hash to see the result.
+let state_capitals = {
+  "Alabama": "Montgomery",
+  "Alaska": "Juneau",
+  "Arizona": "Pheonix"
+};
+state_capitals["Arkansas"] = "Little Rock";
+console.log(state_capitals);
