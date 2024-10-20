@@ -1121,3 +1121,13 @@ let state_capitals = {
 };
 state_capitals["Arkansas"] = "Little Rock";
 console.log(state_capitals);
+
+// 8. Make an array of hashes to store the brand and model for 3 different 
+// laptops. Then print out the second laptop's model.
+let laptops = [
+  { brand: "Microsoft", model: "Surface" },
+  { brand: "Apple", model: "MacBook Pro" },
+  { brand: "Dell", model: "XPS 13" },
+];
+console.log(laptops[1].model);
+

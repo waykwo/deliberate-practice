@@ -1,7 +1,6 @@
-let state_capitals = {
-  "Alabama": "Montgomery",
-  "Alaska": "Juneau",
-  "Arizona": "Pheonix"
-};
-state_capitals["Arkansas"] = "Little Rock";
-console.log(state_capitals);
+let laptops = [
+  { brand: "Microsoft", model: "Surface" },
+  { brand: "Apple", model: "MacBook Pro" },
+  { brand: "Dell", model: "XPS 13" },
+];
+console.log(laptops[1].model)
