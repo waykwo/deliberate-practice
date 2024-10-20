@@ -1,6 +1,9 @@
-let laptops = [
-  { brand: "Microsoft", model: "Surface" },
-  { brand: "Apple", model: "MacBook Pro" },
-  { brand: "Dell", model: "XPS 13" },
+let array = [
+  {id: 1, color: "blue", price: 32},
+  {id: 2, color: "red", price: 12}
 ];
-console.log(laptops[1].model)
+let hash = {};
+array.forEach(item => {
+  hash[item.id] = item;
+});
+console.log(hash);

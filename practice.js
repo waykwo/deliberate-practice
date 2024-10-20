@@ -1131,3 +1131,29 @@ let laptops = [
 ];
 console.log(laptops[1].model);
 
+
+// 04-arrays-hashes3.md
+
+// 1. Convert an array of arrays into a hash.
+// For example, [[1, 3], [8, 9], [2, 16]] becomes {1 => 3, 8 => 9, 2 => 16}.
+let array = [[1, 3], [8, 9], [2, 16]];
+let hash = {};
+array.forEach(subarray => {
+  // console.log(subarray);
+  hash[subarray[0]] = subarray[1];
+});
+console.log(hash);
+
+// 2. Convert an array of hashes into a hash using the :id key from the array's 
+// hashes as the keys in the new hash.
+// For example, [{id: 1, color: "blue", price: 32}, {id: 2, color: "red", price: 12}]
+// becomes {1 => {id: 1, color: "blue", price: 32}, 2 => {id: 2, color: "red", price: 12}}.
+let array = [
+  {id: 1, color: "blue", price: 32},
+  {id: 2, color: "red", price: 12}
+];
+let hash = {};
+array.forEach(item => {
+  hash[item.id] = item;
+});
+console.log(hash);
