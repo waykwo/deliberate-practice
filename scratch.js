@@ -1,9 +1,13 @@
-let array = [
-  {id: 1, color: "blue", price: 32},
-  {id: 2, color: "red", price: 12}
-];
+let string = "bookkeeper";
 let hash = {};
-array.forEach(item => {
-  hash[item.id] = item;
-});
+let i = 0;
+while (i < string.length) {
+  // console.log(string[i]);
+  if (string[i] in hash) {
+    hash[string[i]] += 1;
+  } else {
+    hash[string[i]] = 1;
+  }
+  i++;
+};
 console.log(hash);
