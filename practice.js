@@ -1185,3 +1185,23 @@ Object.entries(things).forEach(([key, value]) => {
   namePricePairs.push(key, value);
 });
 console.log(namePricePairs);
+
+// 5. Convert a hash into an array of hashes using the keys from each hash as 
+// the :id key in each of the array's hashes.
+// For example, 
+// {321 => {name: "Alice", age: 31}, 322 => {name: "Maria", age: 27}} becomes 
+// [{id: 321, name: "Alice", age: 31}, {id: 322, name: "Maria", age: 27}].
+let people_hash = {
+  321: {
+    name: "Alice", age: 31
+  },
+  322: {
+    name: "Maria", age: 27
+  }
+};
+let people_array = [];
+Object.entries(people_hash).forEach(([id, person]) => {
+  person["id"] = parseInt(id);
+  people_array.push(person);
+});
+console.log(people_array);
