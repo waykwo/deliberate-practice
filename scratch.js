@@ -1,13 +1,6 @@
-let string = "bookkeeper";
-let hash = {};
-let i = 0;
-while (i < string.length) {
-  // console.log(string[i]);
-  if (string[i] in hash) {
-    hash[string[i]] += 1;
-  } else {
-    hash[string[i]] = 1;
-  }
-  i++;
-};
-console.log(hash);
+let things = {"chair": 100, "book": 14};
+let namePricePairs = [];
+Object.entries(things).forEach(([key, value]) => {
+  namePricePairs.push(key, value);
+});
+console.log(namePricePairs);

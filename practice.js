@@ -1175,3 +1175,13 @@ while (i < string.length) {
   i++;
 };
 console.log(hash);
+
+// 4. Convert a hash into an array of arrays.
+// For example, {"chair" => 100, "book" => 14} becomes 
+// [["chair", 100], ["book", 14]].
+let things = {"chair": 100, "book": 14};
+let namePricePairs = [];
+Object.entries(things).forEach(([key, value]) => {
+  namePricePairs.push(key, value);
+});
+console.log(namePricePairs);
