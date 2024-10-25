@@ -1,10 +1,6 @@
-let words = ["do", "or", "do", "not"];
-let word_count = {};
-words.forEach(word => {
-  if (word in word_count) {
-    word_count[word] += 1;
-  } else {
-    word_count[word] = 1;
-  }
+let hash = { a: 1, b: 2, c: 3, d: 4 };
+let array = [];
+Object.entries(hash).forEach(([key, value]) => {
+  array.push(key, value);
 });
-console.log(word_count);
+console.log(array);

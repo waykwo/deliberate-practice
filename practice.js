@@ -1220,3 +1220,13 @@ words.forEach(word => {
   }
 });
 console.log(word_count);
+
+// 7. Convert a hash into a flat array containing all the hash’s keys and values.
+// For example, {"a" => 1, "b" => 2, "c" => 3, "d" => 4} becomes 
+// ["a", 1, "b", 2, "c", 3, "d", 4].
+let hash = { a: 1, b: 2, c: 3, d: 4 };
+let array = [];
+Object.entries(hash).forEach(([key, value]) => {
+  array.push(key, value);
+});
+console.log(array);
