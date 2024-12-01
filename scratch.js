@@ -1,15 +1,14 @@
-let priceObject = { chair: 75, book: 15 };
-let items = [
-  { name: "chair", color: "red", weight: 10 },
-  { name: "book", color: "black", weight: 1 },
+let books = [
+  { author: "Jeff Smith", title: "Bone" },
+  { author: "George Orwell", title: "1984" },
+  { author: "Jeff Smith", title: "RASL" },
 ];
-let combined = {};
-items.forEach(item => {
 
-  combined[item.name] = {
-    price: priceObject[item.name],
-    color: item.color,
-    weight: item.weight
-  };
-});
-console.log(combined);
+let booksObject = {};
+books.forEach((book => {
+  if (booksObject[book.author] === undefined) {
+    booksObject[book.author] = [];
+  }
+  booksObject[book.author].push(book.title);
+}));
+console.log(booksObject);
