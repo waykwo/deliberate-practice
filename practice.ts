@@ -4,3 +4,8 @@
 let first_name: string = "Jeff";
 let last_name: string = "Smith";
 console.log(first_name + " " + last_name);
+
+// 2. Write a program that uses variables to store a first and last name, then prints the full name in one line using string interpolation (the #{} operator).
+let first_name: string = "Jeff";
+let last_name: string = "Smith";
+console.log(`${first_name} ${last_name}`)
